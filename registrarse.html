@@ -4,81 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registrarse</title>
+    <link rel="stylesheet" href="../styles/registrarse.css" />
   </head>
   <body>
-    <h1>Registrarse</h1>
+    <div class="container">
+      <h1 class="title">Registrarse</h1>
+      <p class="subtitle">Completa el formulario para registrarte</p>
 
-    <form action="">
-      <fieldset>
-        <label for="nombre"
-          >Nombre:
-          <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            placeholder="Ingresar nombre"
-            required
-          />
-        </label>
+      <form class="login-form" action="#">
+        <fieldset>
+          <label for="nombre"
+            >Nombre:
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingresar nombre"
+              required
+            />
+          </label>
 
-        <label for="apellido"
-          >Apellido:
-          <input
-            type="text"
-            id="apellido"
-            name="apellido"
-            placeholder="Ingresar apellido"
-            required
-          />
-        </label>
+          <label for="apellido"
+            >Apellido:
+            <input
+              type="text"
+              id="apellido"
+              name="apellido"
+              placeholder="Ingresar apellido"
+              required
+            />
+          </label>
 
-        <label for="email"
-          >Email:
-          <input
-            id="email"
-            name="email"
-            type="email"
-            required
-            placeholder="ingresar email"
-        /></label>
+          <label for="email"
+            >Email:
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              placeholder="Ingresar email"
+          /></label>
 
-        <label for="nombre-usuario"
-          >Nombre de Usuario:
-          <input
-            type="text"
-            id="nombre-usuario"
-            name="nombre-usuario"
-            placeholder="Ingresar nombre de usuario"
-            required
-          />
-        </label>
-        <label for="contraseñia"
-          >Contrasenia:
-          <input
-            type="password"
-            id="contrasenia"
-            name="contrasenia"
-            placeholder="Ingrese contraseñia"
-            required
-          />
-        </label>
+          <label for="nombre-usuario"
+            >Nombre de Usuario:
+            <input
+              type="text"
+              id="nombre-usuario"
+              name="nombre-usuario"
+              placeholder="Ingresar nombre de usuario"
+              required
+            />
+          </label>
+          <label for="contrasenia"
+            >Contraseña:
+            <input
+              type="password"
+              id="contrasenia"
+              name="contrasenia"
+              placeholder="Ingrese contraseña"
+              required
+            />
+          </label>
 
-        <label for="repetir-contrasenia"
-          >Repetir Contrasenia:
-          <input
-            type="password"
-            id="repetir-contrasenia"
-            name="repetir-contrasenia"
-            placeholder="Repetir contraseñia"
-            required
-          />
-        </label>
-      </fieldset>
+          <label for="repetir-contrasenia"
+            >Repetir Contraseña:
+            <input
+              type="password"
+              id="repetir-contrasenia"
+              name="repetir-contrasenia"
+              placeholder="Repetir contraseña"
+              required
+            />
+          </label>
+        </fieldset>
 
-      <fieldset>
-        <legend>Metodo de Pago</legend>
+        <fieldset>
+          <legend>Métodos de Pago</legend>
 
-        <div>
           <label for="tarjeta"
             ><input
               id="tarjeta"
@@ -101,7 +103,7 @@
             required
           />
 
-          <label for="numeroTarjeta">Codigo de seguridad:</label>
+          <label for="codigoSeguridad">Codigo de seguridad:</label>
           <input
             type="text"
             id="codigoSeguridad"
@@ -111,9 +113,7 @@
             maxlength="4"
             required
           />
-        </div>
 
-        <div>
           <label for="cupon"
             ><input
               id="cupon"
@@ -121,26 +121,29 @@
               name="tarjeta-cupon-transferencia"
               value="cupon"
             />
-            Cupon de pago:</label
+            Cupón de pago:</label
           >
 
-          <input
-            id="pago-facil"
-            type="checkbox"
-            name="formaPago"
-            value="pago-facil"
-          />
-          <label for="pago-facil">Pago facil</label>
+          <label for="pago-facil"
+            >Pago fácil
+            <input
+              id="pago-facil"
+              type="checkbox"
+              name="formaPago"
+              value="pago-facil"
+            />
+          </label>
 
-          <input
-            id="rapipago"
-            type="checkbox"
-            name="formaPago"
-            value="rapipago"
-          />
-          <label for="rapipago">Rapipago</label>
-        </div>
-        <div>
+          <label for="rapipago"
+            >Rápipago
+            <input
+              id="rapipago"
+              type="checkbox"
+              name="formaPago"
+              value="rapipago"
+            />
+          </label>
+
           <label for="tranferencia"
             ><input
               id="tranferencia"
@@ -151,11 +154,13 @@
             Transferencia bancaria:</label
           >
           <span>CBU: 0123456789012345678901</span>
-        </div>
-      </fieldset>
+        </fieldset>
 
-      <a href="../index.html"><button type="button">CONFIRMAR</button></a>
-      <a href="../index.html"><button type="button">CANCELAR</button></a>
-    </form>
+        <div class="links">
+          <a href="../index.html" class="btn">CONFIRMAR</a>
+          <a href="../index.html" class="btn">CANCELAR</a>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
