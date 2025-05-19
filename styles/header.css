@@ -1,77 +1,54 @@
-header {
-  background: linear-gradient(90deg, #ff8ac7, #ffc1e3);
-  padding: 15px 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.header {
+  background-color: #e75480;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  padding: 0;
+  margin: 0;
 }
 
-header nav ul {
+nav {
+  width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+nav ul {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   margin: 0;
   padding: 0;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 
-header nav ul li {
-  margin: 0 20px;
+nav li {
+  flex: 1;
+  text-align: center;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
 }
 
-header nav ul li a {
+nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 18px 0;
   color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-  padding: 8px 12px;
-  border-radius: 20px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background 0.3s;
 }
 
-
-/*DESDE 769px HASTA 1024px INCUIDO*/
-@media (min-width: 768px) and (max-width: 1024px) {
-
-  .header .home img {
-      max-height: 3em;
-      margin: 0;
-  }
+nav a:hover {
+  background-color: #ff8da1;
 }
 
-/*DESDE 601px HASTA 768px INCUIDO*/
-@media (min-width: 600px) and (max-width: 768px) {
-  .header .home img {
-      max-height: 2.5em;
-      margin: 0 1.5em;
-  }
-
-  .header .search-bar {
-      width: 30%;
-  }
-
-  .header .contenedor-botones-sesion {
-      display: flex;
-      justify-content: right;
-      gap: 1em;
-      align-items: center;
-  }
-}
-
-/*HASTA 600px INCUIDO*/
-@media (max-width: 600px) {
-
-  .header {
-      height: 8em;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1em;
-      justify-content: center;
-  }
-
-  .header .home img {
-      max-height: 2.5em;
-      margin: 0;
-  }
-  .header .search-bar {
-      width: 60%;
-  }
-
+nav i {
+  font-size: 20px;
 }
