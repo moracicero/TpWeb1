@@ -4,36 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recupero</title>
+    <link rel="stylesheet" href="../styles/recuperar.css" />
   </head>
+
   <body>
-    <h1>Recuperacion Contraseña</h1>
+    <div class="container">
+      <h1 class="title">Recuperar Contraseña</h1>
+      <p class="subtitle">Ingresá tu email y nombre de usuario</p>
 
-    <form action="#">
-      <fieldset>
-        <label for="email"
-          >Email:
-          <input
-            id="email"
-            name="email"
-            type="email"
-            required
-            placeholder="ingresar email"
-        /></label>
+      <form class="login-form" action="#">
+        <fieldset>
+          <label for="email"
+            >Email:
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              placeholder="ingresar email"
+          /></label>
 
-        <label for="nombre-usuario"
-          >Nombre de Usuario:
-          <input
-            type="text"
-            id="nombre-usuario"
-            name="nombre-usuario"
-            placeholder="Ingresar nombre de usuario"
-            required
-          />
-        </label>
-      </fieldset>
-
-      <a href="../index.html"><button type="button">ENVIAR EMAIL</button></a>
-      <a href="../index.html"><button type="button">CANCELAR</button></a>
-    </form>
+          <label for="nombre-usuario"
+            >Nombre de Usuario:
+            <input
+              type="text"
+              id="nombre-usuario"
+              name="nombre-usuario"
+              placeholder="Ingresar nombre de usuario"
+              required
+            />
+          </label>
+        </fieldset>
+        <div class="links">
+          <a href="../index.html" class="btn">ENVIAR EMAIL</a>
+          <a href="../index.html" class="btn">CANCELAR</a>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
