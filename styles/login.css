@@ -54,14 +54,14 @@ html {
 
   /*Agrega un espacio de 20px debajo de la imagen/banner.*/
   /*Sirve para separar visualmente del contenido que sigue (como el título o el formulario).*/
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 
   /*Redondea los bordes de la imagen con un radio de 8px.*/
   /*Esto da un aspecto más moderno y estético.*/
   border-radius: 8px;
 
-  height: 300px;
-  width: 700px;
+  height: 200px;
+  width: 500px;
 }
 
 /* Título y subtítulo */
