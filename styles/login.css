@@ -11,9 +11,11 @@ body,
 html {
   /* Aplica los estilos a ambos elementos, html y body. Esto se hace a veces para asegurarse de que todo el alto de la pantalla se tenga en cuenta correctamente. */
   height: 100%;
-  font-family: Arial, sans-serif;
-  background: #121212;
-  color: #eee;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  background: #ff8da1;
+  color: #fff;
 }
 
 /* Contenedor principal: todo centrado vertical y horizontalmente */
@@ -71,7 +73,7 @@ html {
 
   /*Centra el texto horizontalmente dentro de su contenedor.*/
   text-align: center;
-  color: #e50914; /*color netflix*/
+  color: #e75480; /*color netflix*/
 }
 
 .subtitle {
@@ -79,14 +81,14 @@ html {
   font-size: 1.25rem;
   margin-bottom: 30px;
   text-align: center;
-  color: #bbb;
+  color: #fff;
 }
 
 /*Formulario*/
 
 .login-form {
   /*Establece el color de fondo del formulario.*/
-  background: #222;
+  background: #e75480;
 
   /*Agrega espacio interno entre el contenido del formulario y sus bordes.*/
   /*20px arriba y abajo, 30px a los lados.*/
@@ -127,7 +129,7 @@ label {
   /*El texto del label se mostrará en negrita, para destacarlo del resto del contenido.*/
   font-weight: bold;
   font-size: 1rem;
-  color: #ddd;
+  color: #fff;
 }
 
 /*Este bloque selecciona todos los elementos <input> cuyo tipo sea "text" o "password" (como los campos de usuario y contraseña) y les aplica estos estilos:*/
@@ -150,7 +152,7 @@ Esto ayuda a separarlo visualmente del texto del <label> que está encima*/
 .btn {
   /*Le da al botón un color de fondo rojo, similar al rojo característico de Netflix.*/
 
-  background-color: #e50914;
+  background-color: #ff8da1;
   color: white;
   font-weight: bold;
   padding: 12px 0;
@@ -173,7 +175,7 @@ Esto ayuda a separarlo visualmente del texto del <label> que está encima*/
 /*Este bloque aplica estilos cuando el usuario pasa el mouse por encima del botón (efecto hover).
 Es decir, cuando el mouse está encima del botón.*/
 .btn:hover {
-  background-color: #b0070f;
+  background-color: #ff8da1;
 }
 
 /*LINKS*/
@@ -183,7 +185,7 @@ Es decir, cuando el mouse está encima del botón.*/
 }
 
 .links a {
-  color: #e50914;
+  color: #ff8da1;
   text-decoration: none;
   font-weight: bold;
 }
