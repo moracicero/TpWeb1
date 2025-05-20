@@ -1,6 +1,7 @@
+
 .contenedor-footer {
-  background-color: #f8bbd0;
-  color: #333;
+  background-color: #e75480;
+  color: #fff;
   border-top: 2px solid #e91e63;
   letter-spacing: 0.5px;
   padding: 3px 3%;
@@ -9,6 +10,7 @@
   align-items: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
+  min-height: auto;
  }
  
 
@@ -25,7 +27,7 @@
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 3px;
-  color: #e91e63;
+  color: #fff;
   margin: 25px 0 20px 0;
   text-align: center;
   width: 100%;
@@ -51,7 +53,7 @@
  
 
  .menu-footer a:hover {
-  color: #e91e63;
+  color: #ff8da1;
  }
  
 
@@ -75,7 +77,7 @@
  
 
  .listas-footer a:hover {
-  color: #e91e63;
+  color: #ff8da1;
  }
  
 
@@ -86,7 +88,7 @@
   text-align: right;
   width: 100%;
   font-size: 0.7em;
-  color: #333;
+  color: #fff;
   padding-top: 5px;
  }
  
