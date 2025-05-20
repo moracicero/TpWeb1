@@ -4,131 +4,191 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfil</title>
+   <link rel="stylesheet" href="../styles/perfil.css">
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav>
         <ul>
-          <li><a href="home.html">HOME</a></li>
-          <li><a href="series.html">SERIES</a></li>
-          <li><a href="peliculas.html">PELICULAS</a></li>
-          <li><a href="perfil.html">PERFIL</a></li>
+          <li><a href="home.html"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="series.html"><i class="fa-solid fa-film"></i> Series</a></li>
+          <li><a href="peliculas.html"><i class="fa-solid fa-film"></i> Películas</a></li>
+          <li><a href="perfil.html"><i class="fa-solid fa-circle-user"></i> Perfil</a></li>
         </ul>
       </nav>
     </header>
-    <section>
-      <h2>Perfil de Usuario</h2>
-      <!--<img src="../img/images.png" alt="avatar" />-->
-      <p>avatar del perfil</p>
-      <p><strong>Email:</strong> holis@gmail.com</p>
-      <p><strong>Nombre de usuario:</strong> holisUser</p>
-    </section>
-    <form action="#">
-      <fieldset>
-        <label for="nueva-contraseñia"
-          >Contraseña:
-          <input
-            type="password"
-            id="nueva-contraseñia"
-            name="nueva-contraseñia"
-            placeholder="Ingrese nueva contraseñia"
-            required
-          />
-        </label>
-
-        <label for="repetir-contrasenia"
-          >Repetir Contraseña:
-          <input
-            type="password"
-            id="repetir-contrasenia"
-            name="repetir-contrasenia"
-            placeholder="Repetir nueva contraseñia"
-            required
-          />
-        </label>
-      </fieldset>
-      <fieldset>
-        <legend>Metodo de Pago</legend>
-
-        <div>
-          <label for="tarjeta"
-            ><input
-              id="tarjeta"
-              type="radio"
-              name="tarjeta-cupon-transferencia"
-              value="tarjeta"
-              checked
+    <div class="container">
+      <section>
+        <h2 class="title">Perfil de Usuario</h2>
+        <img src="../img/images.png" alt="avatar del perfil" class="avatar">
+      </section>
+        <form class="login-form" action="#">
+          <fieldset>
+            <label for="email"
+              >Email:
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                placeholder="USUARIO@GMAIL"
+            /></label>
+  
+            </label>
+            <label for="contrasenia"
+              >Contraseña:
+              <input
+                type="password"
+                id="contrasenia"
+                name="contrasenia"
+                placeholder=************
+                required
+              />
+            </label>
+            <label for="ingresar-contrasenia"
+            >Nueva Contraseña:
+            <input
+              type="password"
+              id="ingresar-contrasenia"
+              name="repetir-contrasenia"
+              placeholder="Ingresar nueva contraseña"
+              required
             />
-            Tarjeta de Credito:</label
-          >
+          </label>
+  
+            <label for="repetir-contrasenia"
+              >Repetir Contraseña:
+              <input
+                type="password"
+                id="repetir-contrasenia"
+                name="repetir-contrasenia"
+                placeholder="Repetir contraseña"
+                required
+              />
+            </label>
+          </fieldset>
+  
+          <fieldset>
+            <legend>Métodos de Pago</legend>
 
-          <label for="numeroTarjeta">Número de tarjeta:</label>
-          <input
-            type="text"
-            id="numeroTarjeta"
-            name="numeroTarjeta"
-            inputmode="numeric"
-            pattern="[0-9]{13,19}"
-            maxlength="19"
-            required
-          />
-
-          <label for="numeroTarjeta">Codigo de seguridad:</label>
-          <input
-            type="text"
-            id="codigoSeguridad"
-            name="codigoSeguridad"
-            inputmode="numeric"
-            pattern="[0-9]{3,4}"
-            maxlength="4"
-            required
-          />
-        </div>
-
-        <div>
-          <label for="cupon"
-            ><input
-              id="cupon"
-              type="radio"
-              name="tarjeta-cupon-transferencia"
-              value="cupon"
+            <label for="tarjeta"
+              ><input
+                id="tarjeta"
+                type="radio"
+                name="tarjeta-cupon-transferencia"
+                value="tarjeta"
+                checked
+              />
+              Tarjeta de Credito:</label
+            >
+  
+            <label for="numeroTarjeta">Número de tarjeta:</label>
+            <input
+              type="text"
+              id="numeroTarjeta"
+              name="numeroTarjeta"
+              inputmode="numeric"
+              pattern="[0-9]{13,19}"
+              maxlength="19"
+              required
             />
-            Cupon de pago:</label
-          >
-
-          <input
-            id="pago-facil"
-            type="checkbox"
-            name="formaPago"
-            value="pago-facil"
-          />
-          <label for="pago-facil">Pago facil</label>
-
-          <input
-            id="rapipago"
-            type="checkbox"
-            name="formaPago"
-            value="rapipago"
-          />
-          <label for="rapipago">Rapipago</label>
-        </div>
-        <div>
-          <label for="tranferencia"
-            ><input
-              id="tranferencia"
-              type="radio"
-              name="tarjeta-cupon-transferencia"
-              value="tranferencia"
+  
+            <label for="codigoSeguridad">Codigo de seguridad:</label>
+            <input
+              type="text"
+              id="codigoSeguridad"
+              name="codigoSeguridad"
+              inputmode="numeric"
+              pattern="[0-9]{3,4}"
+              maxlength="4"
+              required
             />
-            Transferencia bancaria:</label
-          >
-          <span>CBU: 0123456789012345678901</span>
-        </div>
-      </fieldset>
-      <a href="perfil.html"><button type="button">GUARDAR CAMBIOS</button></a>
-      <a href="perfil.html"
-        ><button type="button">CANCELAR SUSCRIPCION</button></a
-      >
-    </form>
+  
+            <label for="cupon"
+              ><input
+                id="cupon"
+                type="radio"
+                name="tarjeta-cupon-transferencia"
+                value="cupon"
+              />
+              Cupón de pago:</label
+            >
+  
+            <label for="pago-facil"
+              >Pago fácil
+              <input
+                id="pago-facil"
+                type="checkbox"
+                name="formaPago"
+                value="pago-facil"
+              />
+            </label>
+  
+            <label for="rapipago"
+              >Rápipago
+              <input
+                id="rapipago"
+                type="checkbox"
+                name="formaPago"
+                value="rapipago"
+              />
+            </label>
+  
+            <label for="tranferencia"
+              ><input
+                id="tranferencia"
+                type="radio"
+                name="tarjeta-cupon-transferencia"
+                value="tranferencia"
+              />
+              Transferencia bancaria:</label
+            >
+            <span>CBU: 0123456789012345678901</span>
+          </fieldset>
+  
+          <div class="links">
+            <a href="home.html" class="btn">GUARDAR</a>
+            <a href="home.html" class="btn">CANCELAR</a>
+          </div>
+        </form>
+    </div>
+
+    <footer class="contenedor-footer">
+      <div id="fila">
+      <div>
+      <h5>INTEGRANTES</h5>
+      <ul class="listas-footer">
+      <li>Cicero Mora - 46022589</li>
+      <li>Jennifer Cáceres - 44968103</li>
+      <li>Ana Alderete - 36782140</li>
+      </ul>
+      </div>
+      <div>
+      <h5>MENÚ</h5>
+      <ul class="menu-footer">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="series.html">Series</a></li>
+      <li><a href="peliculas.html">Películas</a></li>
+      <li><a href="perfil.html">Perfil</a></li>
+      </ul>
+      </div>
+      
+      <div>
+      <h5>LEGAL</h5>
+      <ul class="listas-footer">
+      <li><a href="terminos.html">Términos de Servicio</a></li>
+      <li><a href="politicas.html">Política de Privacidad</a></li>
+      <li><a href="https://www.unlam.edu.ar/">Contacto</a></li>
+      </ul>
+      </div>
+      </div>
+      <div class="copyright">
+      <p>© 2025, todos los derechos reservados.</p> 
+      </div>
+      </footer>
+    </body>
+    </html>
+
+
   </body>
 </html>
