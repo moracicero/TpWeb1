@@ -2,8 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: #121212;
-  color: #1a1a1a;
+  background: #fff;
+  color: #fff;
 }
 
 .header {
@@ -62,17 +62,18 @@ nav i {
 }
 
 .container {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   max-width: 600px;
   margin: 25px auto;
   padding: 2rem;
-  background: #222;
+  background: #ff8da1;
   border-radius: 15px;
 }
 
 .title {
   text-align: center;
   font-size: 2rem;
-  color: #e50914;
+  color: #e75480;
   margin-bottom: 0.3rem;
   margin-top: -0.3rem;
 }
@@ -89,7 +90,7 @@ form label {
   display: block;
   margin-top: 1rem;
   margin-bottom: 0.3rem;
-  color: #ddd;
+  color: #fff;
   font-weight: 600;
 }
 
@@ -111,7 +112,7 @@ input[type="password"] {
 input[type="radio"],
 input[type="checkbox"] {
   margin-right: 8px;
-  accent-color: #0066cc;
+  accent-color: #e75480;
 }
 
 fieldset {
@@ -121,13 +122,13 @@ fieldset {
 
 fieldset legend {
   font-weight: bold;
-  color: #eee;
+  color: #fff;
 }
 
 fieldset span {
   display: inline-block;
   margin-left: 10px;
-  color: #eee;
+  color: #fff;
 }
 
 .links {
@@ -137,7 +138,7 @@ fieldset span {
 }
 
 .btn {
-  background-color: #e50914;
+  background-color: #ff8da1;
   color: white;
   padding: 0.7rem 1.5rem;
   text-decoration: none;
@@ -148,7 +149,7 @@ fieldset span {
 }
 
 .btn:hover {
-  background-color: #b0070f;
+  background-color: #ff8da1;
 }
 
 .contenedor-footer {
