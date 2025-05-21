@@ -60,7 +60,7 @@ label {
   flex-direction: column;
   font-weight: bold;
   font-size: 1rem;
-  color: #fff;
+  color: #e75480;
 }
 
 /*aca se agrego el campo email*/
@@ -101,3 +101,4 @@ input[type="email"] {
 .links a:hover {
   text-decoration: underline;
 }
+
