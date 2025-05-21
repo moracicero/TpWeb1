@@ -1,184 +1,103 @@
-/* Reset básico */
-
 * {
   margin: 0;
   padding: 0;
-  /* el padding y el border se incluyen dentro del ancho y alto total del elemento. */
   box-sizing: border-box;
 }
 
 body,
 html {
-  /* Aplica los estilos a ambos elementos, html y body. Esto se hace a veces para asegurarse de que todo el alto de la pantalla se tenga en cuenta correctamente. */
   height: 100%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 25px;
   font-weight: 600;
   background: #ff8da1;
   color: #fff;
 }
 
-/* Contenedor principal: todo centrado vertical y horizontalmente */
-
 .container {
-  /* Garantiza que un elemento siempre mantenga una altura minima, incluso si su contenido no ocupa el espacio disponible.100vh=100% de la altura de la ventana grafica */
   min-height: 100vh;
-
-  /*Eso permite organizar y alinear los elementos hijos fácilmente.*/
   display: flex;
-
-  /*Coloca los elementos hijos uno debajo del otro (de arriba hacia abajo), en una columna vertical.*/
   flex-direction: column;
-
-  /*Centra los elementos hijos horizontalmente (a lo ancho del contenedor).*/
   align-items: center;
-
-  /*Centra los elementos hijos verticalmente (a lo alto del contenedor).*/
   justify-content: center;
-
-  /*Agrega un espacio interno (acolchado) de 20 píxeles en todos los lados del contenedor.
-*/
   padding: 20px;
 }
 
-/*Banner: que no sea muy grande y se adapte*/
-
 .header .banner {
-  /*Hace que la imagen nunca se pase del ancho de su contenedor.*/
-  /*Esto la vuelve responsiva, adaptándose a distintos tamaños de pantalla.*/
   max-width: 100%;
-
-  /*Ajusta la altura proporcionalmente al ancho (para que no se deforme la imagen).*/
-  /*Mantiene la relación de aspecto original.*/
   height: auto;
-
-  /*Agrega un espacio de 20px debajo de la imagen/banner.*/
-  /*Sirve para separar visualmente del contenido que sigue (como el título o el formulario).*/
   margin-bottom: 5px;
-
-  /*Redondea los bordes de la imagen con un radio de 8px.*/
-  /*Esto da un aspecto más moderno y estético.*/
   border-radius: 8px;
-
   height: 200px;
   width: 500px;
 }
 
-/* Título y subtítulo */
-
 .title {
-  /*1rem = 16px; 3rem ≈ 48px*/
   font-size: 3rem;
   margin-bottom: 10px;
-
-  /*Centra el texto horizontalmente dentro de su contenedor.*/
   text-align: center;
-  color: #e75480; /*color netflix*/
+  color: #e75480;
 }
 
 .subtitle {
-  /*1.25rem es igual a aproximadamente 20px (si asumimos que 1rem = 16px).*/
   font-size: 1.25rem;
   margin-bottom: 30px;
   text-align: center;
   color: #fff;
 }
 
-/*Formulario*/
-
 .login-form {
-  /*Establece el color de fondo del formulario.*/
   background: #e75480;
-
-  /*Agrega espacio interno entre el contenido del formulario y sus bordes.*/
-  /*20px arriba y abajo, 30px a los lados.*/
   padding: 20px 30px;
-
-  /*Redondea los bordes del formulario.*/
   border-radius: 8px;
-
-  /*El formulario usará todo el ancho disponible de su contenedor padre.*/
   width: 100%;
-
-  /*Aunque pueda crecer al 100%, nunca superará los 400px de ancho.*/
   max-width: 400px;
-
-  /*Convierte al formulario en un contenedor flexbox, permitiendo controlar la distribución de los elementos internos (inputs, botones, etc.).*/
   display: flex;
-
-  /*Organiza todos los elementos hijos en una columna vertical.*/
   flex-direction: column;
-
-  /*Agrega 15px de espacio entre cada elemento hijo (como los campos de entrada, el botón y los enlaces).*/
   gap: 15px;
 }
 
 fieldset {
-  /*Elimina el borde por defecto del <fieldset>.*/
   border: none;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-/*labels con inputs*/
-
 label {
   display: flex;
   flex-direction: column;
-  /*El texto del label se mostrará en negrita, para destacarlo del resto del contenido.*/
   font-weight: bold;
   font-size: 1rem;
   color: #fff;
 }
 
-/*Este bloque selecciona todos los elementos <input> cuyo tipo sea "text" o "password" (como los campos de usuario y contraseña) y les aplica estos estilos:*/
-
 input[type="text"],
 input[type="password"] {
   padding: 8px 12px;
 
-  /*Agrega espacio por fuera del input, solo arriba.
-Esto ayuda a separarlo visualmente del texto del <label> que está encima*/
   margin-top: 5px;
   border: none;
   border-radius: 5px;
-  /*Establece el tamaño de fuente dentro del input en 1 rem (normalmente 16px)*/
+
   font-size: 1rem;
 }
 
-/*Boton*/
-
 .btn {
-  /*Le da al botón un color de fondo rojo, similar al rojo característico de Netflix.*/
-
   background-color: #ff8da1;
   color: white;
   font-weight: bold;
   padding: 12px 0;
   border: none;
   border-radius: 5px;
-
-  /*Cambia el cursor a una manito cuando pasás el mouse por encima, indicando que se puede hacer clic.*/
   cursor: pointer;
-
   font-size: 1.2rem;
-
-  /*Aplica una animación suave cuando cambia el color de fondo (por ejemplo, al hacer hover).
-
-0.3s es la duración y ease hace que el cambio sea fluido.*/
   transition: background-color 0.3s ease;
 }
 
-/*¡Perfecto, Ana! Este fragmento de código complementa al botón que vimos antes.*/
-
-/*Este bloque aplica estilos cuando el usuario pasa el mouse por encima del botón (efecto hover).
-Es decir, cuando el mouse está encima del botón.*/
 .btn:hover {
   background-color: #ff8da1;
 }
-
-/*LINKS*/
 
 .links {
   text-align: center;
@@ -191,6 +110,7 @@ Es decir, cuando el mouse está encima del botón.*/
 }
 
 .links a:hover {
-  /*Hace que el texto del enlace tenga una línea subrayada.*/
   text-decoration: underline;
 }
+
+
