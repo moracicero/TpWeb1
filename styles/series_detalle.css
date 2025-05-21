@@ -6,8 +6,7 @@ body {
   color: #333;
 }
 
-
-.detalle-Series {
+.detalle-pelicula {
   max-width: 960px;
   margin: 20px auto;
   background-color: #fff;
@@ -15,13 +14,11 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
 .info-principal {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
-
 
 .imagen-trailer {
   flex: 1 1 300px;
@@ -39,10 +36,14 @@ body {
   height: 300px;
   border: none;
   margin-top: 10px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
-
-.boton_ver_serie {
+.boton-ver {
   background-color: #e75480;
   color: #fff;
   padding: 10px 20px;
@@ -53,16 +54,15 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.boton_ver_serie:hover {
+.boton-ver:hover {
   background-color: #ff8da1;
 }
-
 
 .info-texto {
   flex: 1 1 400px;
 }
 
-#titulo-series {
+#titulo-pelicula {
   font-size: 2em;
   margin-top: 0;
 }
@@ -76,7 +76,6 @@ body {
   text-decoration: none;
 }
 
-
 .info-texto select {
   margin-left: 10px;
   padding: 5px;
@@ -84,18 +83,17 @@ body {
   border: 1px solid #ccc;
 }
 
-
-.series-similares {
+.peliculas-similares {
   margin-top: 30px;
 }
 
-.series-similares h3 {
+.peliculas-similares h3 {
   font-size: 1.5em;
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
 
-.grilla-similares {
+.grilla-similar {
   display: flex;
   justify-content: flex-start;
   gap: 10px;
@@ -103,11 +101,11 @@ body {
   padding-bottom: 10px;
 }
 
-.grilla-similares a {
+.grilla-similar a {
   display: block;
 }
 
-.grilla-similares img {
+.grilla-similar img {
   width: 150px;
   height: auto;
   display: block;
@@ -116,129 +114,6 @@ body {
   transition: transform 0.2s ease-in-out;
 }
 
-.grilla-similares img:hover {
-  transform: scale(1.05);
-}
-
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f0f0;
-  color: #333;
-}
-
-
-.detalle-Series {
-  max-width: 960px;
-  margin: 20px auto;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-
-.info-principal {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-
-.imagen-trailer {
-  flex: 1 1 300px;
-  position: relative;
-}
-
-.imagen-trailer img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.imagen-trailer iframe {
-  width: 100%;
-  height: 300px;
-  border: none;
-  margin-top: 10px;
-}
-
-
-.boton_ver_serie {
-  background-color: #e75480;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  display: inline-block;
-  margin-top: 15px;
-  transition: background-color 0.3s ease;
-}
-
-.boton_ver_serie:hover {
-  background-color: #ff8da1;
-}
-
-
-.info-texto {
-  flex: 1 1 400px;
-}
-
-#titulo-series {
-  font-size: 2em;
-  margin-top: 0;
-}
-
-.info-texto p {
-  margin-bottom: 10px;
-}
-
-.info-texto p a {
-  color: inherit;
-  text-decoration: none;
-}
-
-
-.info-texto select {
-  margin-left: 10px;
-  padding: 5px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-
-
-.series-similares {
-  margin-top: 30px;
-}
-
-.series-similares h3 {
-  font-size: 1.5em;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
-
-.grilla-similares {
-  display: flex;
-  justify-content: flex-start;
-  gap: 10px;
-  overflow-x: auto;
-  padding-bottom: 10px;
-}
-
-.grilla-similares a {
-  display: block;
-}
-
-.grilla-similares img {
-  width: 150px;
-  height: auto;
-  display: block;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease-in-out;
-}
-
-.grilla-similares img:hover {
+.grilla-similar img:hover {
   transform: scale(1.05);
 }
