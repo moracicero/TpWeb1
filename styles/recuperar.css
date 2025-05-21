@@ -37,12 +37,12 @@ html {
 }
 
 .login-form {
-  background: #fff;
+  background: #e75480;
   padding: 20px 30px;
   border-radius: 8px;
   width: 100%;
   /*le baje un poco el maximo ancho del form*/
-  max-width: 350px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -60,7 +60,7 @@ label {
   flex-direction: column;
   font-weight: bold;
   font-size: 1rem;
-  color: #e75480;
+  color: #fff;
 }
 
 /*aca se agrego el campo email*/
@@ -75,7 +75,7 @@ input[type="email"] {
 }
 
 .btn {
-  background-color: #e75480;
+  background-color: #ff8da1;
   color: white;
   font-weight: bold;
   padding: 12px 0;
@@ -89,7 +89,7 @@ input[type="email"] {
 }
 
 .btn:hover {
-  background-color: #e75480;
+  background-color: #ff8da1;
 }
 
 .links {
@@ -101,4 +101,6 @@ input[type="email"] {
 .links a:hover {
   text-decoration: underline;
 }
+
+
 
