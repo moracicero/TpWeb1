@@ -24,6 +24,7 @@
       <section>
         <h2 class="title">Perfil de Usuario</h2>
         <img src="assets/perfil.png" alt="avatar del perfil" class="avatar">
+        <p id="nombre-usuario" class="nombre-usuario"></p>
       </section>
         <form class="login-form" action="#">
           <fieldset>
@@ -44,7 +45,7 @@
                 type="password"
                 id="contrasenia"
                 name="contrasenia"
-                placeholder=************
+                placeholder="************"
                 required
               />
             </label>
@@ -150,8 +151,9 @@
           </fieldset>
   
           <div class="links">
-            <a href="home.html" class="btn">GUARDAR</a>
-            <a href="home.html" class="btn">CANCELAR</a>
+            <button type="submit" id="btn-guardar" class="btn">GUARDAR</button>
+            <button type="button" id="btn-cancelar" class="btn">CANCELAR</button>
+
           </div>
         </form>
     </div>
@@ -182,17 +184,14 @@
       <li><a href="terminos.html">Términos de Servicio</a></li>
       <li><a href="politicas.html">Política de Privacidad</a></li>
       <li><a href="https://www.unlam.edu.ar/">Contacto</a></li>
-      <li><a href="index.html">Cerrar Sesion</a></li>
       </ul>
+      <button id="cerrar-sesion" class="btn">Cerrar sesión</button>
       </div>
       </div>
       <div class="copyright">
       <p>© 2025, todos los derechos reservados.</p> 
       </div>
       </footer>
+      <script src="js/perfil.js"></script>
     </body>
     </html>
-
-
-  </body>
-</html>
