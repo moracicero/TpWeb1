@@ -1,442 +1,465 @@
 const DATA_PELICULAS = [
-    {
-        "id": "the-incredible-hulk", // Added for easier mapping to detail pages
-        "imageUrl": "assets/hulk_movie.jpg",
-        "heroimg": "assets/hulk_hero.png",
-        "title": "The incredible Hulk",
-        "clasificacion": 13,
-        "año": 2008,
-        "genre": [
-            "Acción",
-            "Fantasía"
-        ],
-        "descripcion": "En The Incredible Hulk, Bruce Banner se convierte en Hulk como un peón involuntario en un esquema militar para revitalizar el programa del supersoldado a través de radiación gamma.",
-        "resumen": "Bruce Banner recorre el mundo en busca de un antídoto para librarse de su alter ego. Además tendrá que hacer frente a Emil, un nuevo enemigo, lo que convertirá a Nueva York en el escenario de la última batalla entre las dos criaturas más poderosas.",
-        "trailer": "https://www.youtube.com/watch?v=xbqNb2PFKKA",
-        "iframe": "https://www.youtube.com/embed/xbqNb2PFKKA?si=5rnsgDP6cUfOwseY",
-        "elenco": [
-            "Edward Norton",
-            "Liv Tyler",
-            "Tim Roth",
-            "William Hurt",
-            "Tim Blake Nelson",
-            "Ty Burrell",
-            "Christina Cabot",
-            "Peter Mensah"
-        ],
-        "directores": [
-            "Louis Leterrier"
-        ],
-        "productores": [
-            "Avi Arad",
-            "Kevin Feige",
-            "Gale Anne Hurd",
-            "Stan Lee",
-            "David Maisel",
-            "Jim Van Wyck"
-        ],
-        "temporadas": 0,
-        "capitulos": 0
-    },
-    {
-        "id": "supercool", // Added
-        "imageUrl": "assets/supercool_movie.png",
-        "heroimg": "assets/super-cool_hero.png",
-        "title": "Supercool",
-        "clasificacion": 18,
-        "año": 2007,
-        "genre": [
-            "Comedia",
-            "Adolescente"
-        ],
-        "descripcion": "Un adolescente intenta navegar por las complejidades de la vida, el amor y la amistad mientras enfrenta los desafíos de crecer.",
-        "resumen": "La historia sigue a un grupo de amigos mientras lidian con los altibajos de la adolescencia, explorando temas de identidad, pertenencia y el viaje hacia la adultez.",
-        "trailer": "https://www.youtube.com/watch?v=au2Zq8D9RaY",
-        "iframe": "https://www.youtube.com/embed/au2Zq8D9RaY?si=uD-8ST23VjoB2dCU",
-        "elenco": [
-            "Michael Cera",
-            "Christopher Mintz-Plasse",
-            "Jonah Hill",
-            "Emma Stone",
-        ],
-        "directores": [
-            "Greg Mottola"
-        ],
-        "productores": [
-            "Evan Goldberg",
-            "Greg Mottola",
-        ],
-        "temporadas": 0,
-        "capitulos": 0
-    },
-    {
-        "id": "baila-vini", // Added
-        "imageUrl": "assets/baila-vini_movie.jpg",
-        "heroimg": "assets/baila-vini_hero.jpg",
-        "title": "Baila, Vini",
-        "clasificacion": 0,
-        "año": 2025,
-        "genre": [
-            "Documental"
-        ],
-        "descripcion": "Narra la vida y carrera de Vinícius Júnior, el futbolista brasileño, desde sus inicios hasta su consagración como una estrella mundial.",
-        "resumen": "Baila, Vini es un documental de Netflix sobre el futbolista brasileño Vinícius Júnior",
-        "trailer": "https://www.youtube.com/watch?v=IucwRVDHroc",
-        "iframe": "https://www.youtube.com/embed/IucwRVDHroc?si=5Hydl02FM8oIOmxS",
-        "elenco": [
-            "Vinicius Júnior",
-            "Neymar Jr.",
-            "Thiago Silva",
-            "Gabriel Jesus"
-        ],
-        "directores": [
-            "Andrucha Waddington",
-            "Emilio Domingos"
-        ],
-        "productores": [
-            "Luisa Barbosa",
-            "Renata Brandão"
-        ],
-        "temporadas": 0,
-        "capitulos": 0
-    },
-    {
-        "id": "shaolin-soccer", // Added
-        "imageUrl": "assets/shaolin-soccer_movie.png",
-        "heroimg": "assets/shaolin-soccer_hero.png",
-        "title": "Shaolin soccer",
-        "clasificacion": 13,
-        "año": 2001,
-        "genre": [
-            "Acción",
-            "Comedia"
-        ],
-        "descripcion": "Sing es alumno del Shaolin y su verdadera ambición es popularizar y aproximar el arte del kung fu a la sociedad moderna.",
-        "resumen": "Un día conoce a Fung, un antiguo futbolista fracasado, ambos establecerán una buena relación de la que nacerá la idea de formar un equipo que combine el futbol con las artes marciales.",
-        "trailer": "https://www.youtube.com/watch?v=KEWUDWYDdYs",
-        "iframe": "https://www.youtube.com/embed/KEWUDWYDdYs?si=P2JutV9XXuDTRntV",
-        "elenco": [
-            "Stephen Chow",
-            "Wei Zhao",
-            "Wong yat fei",
-            "Karen Mok",
-            "Cecilia Cheung",
-            "Danny Chan Kwok Kwan",
-            "Chiu Chi Ling",
-            "Zhang Ming Ming"
-        ],
-        "directores": [
-            "Stephen Chow"
-        ],
-        "productores": [
-            "Yeung Kwok Fai"
-        ],
-        "temporadas": 0,
-        "capitulos": 0
-    },
-    {
-        "id": "bad-boys-for-life", // Added
-        "imageUrl": "assets/bad-boys_movie.jpg",
-        "heroimg": "assets/bad-boys_hero.jpg",
-        "title": "Bad Boys For Life",
-        "clasificacion": 17,
-        "año": 2020,
-        "genre": [
-            "Acción",
-            "Comedia"
-        ],
-        "descripcion": "Los detectives de Miami, Mike Lowrey y Marcus Burnett, se reúnen una última vez para acabar con un cartel de drogas que amenaza sus vidas.",
-        "resumen": "Mike y Marcus se ven obligados a trabajar juntos una vez más cuando un nuevo enemigo aparece en la escena, poniendo en peligro todo lo que han construido.",
-        "trailer": "https://www.youtube.com/watch?v=enizDUYZOCI",
-        "iframe": "https://www.youtube.com/embed/enizDUYZOCI?si=4nXW1Q5GUX1iktjK",
-        "elenco": [
-            "Will Smith",
-            "Martin Lawrence",
-            "Vanessa Hudgens",
-            "Alexander Ludwig",
-            "Charles Melton",
-            "Paola Núñez",
-            "Nicky Jam",
-            "Kate del Castillo"
-        ],
-        "directores": [
-            "Adil El Arbi",
-            "Bilall Fallah"
-        ],
-        "productores": [
-            "Jerry Bruckheimer",
-            "Will Smith",
-            "Doug Belgrad",
-            "Chad Oman",
-            "Mike Stenson",
-            "James Lassiter",
-            "Barry H. Waldman"
-        ],
-        "temporadas": 0,
-        "capitulos": 0
-    },
-    {
-        "id": "el-juego-del-calamar", // Added
-        "imageUrl": "assets/squid-game_series.jpg",
-        "heroimg": "assets/squid-game_hero.jpg",
-        "title": "El juego del calamar",
-        "clasificacion": 16,
-        "año": 2021,
-        "genre": [
-            "Drama",
-            "Suspenso"
-        ],
-        "descripcion": "Un grupo de personas con problemas financieros acepta una misteriosa invitación para participar en un juego de supervivencia con un premio en efectivo.",
-        "resumen": "A medida que los jugadores compiten en juegos infantiles con consecuencias mortales, deben enfrentarse a sus propios demonios y a la naturaleza humana.",
-        "trailer": "https://www.youtube.com/watch?v=oqxAJKy0ii4",
-        "iframe": "https://www.youtube.com/embed/oqxAJKy0ii4?si=W8Sa-153t-5EAXdh",
-        "elenco": [
-            "Jung-jae Lee",
-            "Lee Byung-hun",
-            "Wi Ha-Joon",
-            "Ha-Neul Kang",
-            "Sung-Hoon Park",
-            "Yu-ri Jo",
-            "Si-wan Yim",
-            "Yang Dong-Geun",
-            "Ae-sim Kang",
-            "Jin-wook Lee",
-            "Jae-won Roh",
-            "Ji-an Won",
-            "Park Gyu-young",
-            "Dai-Su Oh"
-        ],
-        "directores": [
-            "Hwang Dong-hyuk"
-        ],
-        "productores": [
-            "Hwang Dong-hyuk",
-            "Kim Ji-yeon"
-        ],
-        "temporadas": [
-            "Temporada 1",
-            "Temporada 2",
-            "Temporada 3"
-        ],
-        "capitulos": [
-            "Capitulo 1",
-            "Capitulo 2",
-            "Capitulo 3",
-            "Capitulo 4",
-            "Capitulo 5",
-            "Capitulo 6",
-            "Capitulo 7",
-            "Capitulo 8",
-            "Capitulo 9",
-            "... 17"
-        ]
-    },
-    {
-        "id": "death-note", // Added
-        "imageUrl": "assets/death-note_series.jpg",
-        "heroimg": "assets/death-note_hero.jpg",
-        "title": "Death note",
-        "clasificacion": 14,
-        "año": 2006,
-        "genre": [
-            "Suspenso",
-            "Fantasía"
-        ],
-        "descripcion": "Un libro malévolo cae en manos de Yagami Light. Ese libro tiene unas instrucciones claras y encierra una magia oscura.",
-        "resumen": "Yagami no lo cree en un principio pero una vez lo prueba y comprueba que es cierto, toda su vida cambia por completo. El protagonista usará este artilugio para eliminar del mundo todos esas personas malas, criminales y seres oscuros y malvados que lo acechan.",
-        "trailer": "https://www.youtube.com/watch?v=NlJZ-YgAt-c",
-        "iframe": "https://www.youtube.com/embed/NlJZ-YgAt-c?si=QT0f0Ty4FVurOdq5",
-        "elenco": [
-            "Mamoru Miyano",
-            "Shido Nakamura",
-            "Noriko Hidaka",
-            "Kappei Yamaguchi",
-            "Aya Hirano",
-            "Nozomu Sasaki",
-            "Naoya Uchida"
-        ],
-        "directores": [
-            "Tetsurō Araki"
-        ],
-        "productores": [
-            ""
-        ],
-        "temporadas": [
-            "Temporada 1"
-        ],
-        "capitulos": [
-            "Capitulo 1",
-            "Capitulo 2",
-            "Capitulo 3",
-            "Capitulo 4",
-            "Capitulo 5",
-            "Capitulo 6",
-            "Capitulo 7",
-            "Capitulo 8",
-            "Capitulo 9",
-            "... 37"
-        ]
-    },
-    {
-        "id": "breaking-bad", // Added
-        "imageUrl": "assets/breaking-bad_series.jpg",
-        "heroimg": "assets/breaking-bad_hero.jpg",
-        "title": "Breaking Bad",
-        "clasificacion": 14,
-        "año": 2008,
-        "genre": [
-            "Drama"
-        ],
-        "descripcion": "Un profesor de química se convierte en fabricante de metanfetaminas para asegurar el futuro financiero de su familia.",
-        "resumen": "Walter White, un profesor de química, se asocia con un exalumno para producir y vender metanfetaminas tras ser diagnosticado con cáncer.",
-        "trailer": "https://www.youtube.com/watch?v=HhesaQXLuRY",
-        "iframe": "https://www.youtube.com/embed/HhesaQXLuRY?si=TIbyVr-xCL4qO-6o",
-        "elenco": [
-            "Bryan Cranston",
-            "Aaron Paul",
-            "Anna Gunn",
-            "Dean Norris",
-            "Betsy Brandt",
-            "RJ Mitte",
-            "Bob Odenkirk",
-            "Jonathan Banks"
-        ],
-        "directores": [
-            "Vince Gilligan",
-            "Adam Bernstein",
-            "Michelle MacLaren",
-            "Michael Slovis",
-            "Peter Gould",
-            "Colin Bucksey",
-            "Thomas Schnauz",
-            "Sam Catlin",
-            "Rian Johnson",
-            "Bryan Cranston"
-        ],
-        "productores": [
-            "Karen Moore"
-        ],
-        "temporadas": [
-            "Temporada 1",
-            "Temporada 2",
-            "Temporada 3",
-            "Temporada 4",
-            "Temporada 5",
-        ],
-        "capitulos": [
-            "Capitulo 1",
-            "Capitulo 2",
-            "Capitulo 3",
-            "Capitulo 4",
-            "Capitulo 5",
-            "Capitulo 6",
-            "Capitulo 7",
-            "Capitulo 8",
-            "Capitulo 9",
-            "... 62"
-        ]
-    },
-    {
-        "id": "el-eternauta", // Added
-        "imageUrl": "assets/eternauta_series.jpg",
-        "heroimg": "assets/eternauta_hero.jpg",
-        "title": "El eternauta",
-        "clasificacion": 14,
-        "año": 2025,
-        "genre": [
-            "Drama",
-            "Ciencia Ficción"
-        ],
-        "descripcion": "Un grupo de amigos se enfrenta a una invasión alienígena mientras intentan sobrevivir en un mundo post-apocalíptico.",
-        "resumen": "El eternauta es una historia de ciencia ficción que explora la lucha de la humanidad contra fuerzas externas y la importancia de la amistad y la solidaridad.",
-        "trailer": "https://www.youtube.com/watch?v=ykLTd5aTa88",
-        "iframe": "https://www.youtube.com/embed/ykLTd5aTa88?si=k3ofAxCLHR7CcXHh",
-        "elenco": [
-            "Ricardo Darín",
-            "Carla Peterson",
-            "Cesar Troncoso",
-            "Andrea Pietra",
-            "Ariel Staltari",
-            "Marcelo Subiotto",
-            "Claudio Martínez Bel",
-            "Orianna Cardenas",
-            "Mora Fisz"
-        ],
-        "directores": [
-            "Bruno Stagnaro"
-        ],
-        "productores": [
-            "Micaela Buye",
-            "Hugo Sigman",
-            "Matias Mosteirín",
-            "Leticia Cristi",
-            "Diego Copello"
-        ],
-        "temporadas": [
-            "Temporada 1"
-        ],
-        "capitulos": [
-            "Capitulo 1",
-            "Capitulo 2",
-            "Capitulo 3",
-            "Capitulo 4",
-            "Capitulo 5",
-            "Capitulo 6"
-        ]
-    },
-    {
-        "id": "the-office", // Added
-        "imageUrl": "assets/the-office_series.jpg",
-        "heroimg": "assets/the-office_hero.jpg",
-        "title": "The Office",
-        "clasificacion": 13,
-        "año": 2005,
-        "genre": [
-            "Comedia"
-        ],
-        "descripcion": "The Office es una serie de televisión de comedia que sigue el día a día de los empleados de una sucursal de la empresa papelera ficticia",
-        "resumen": "The Office , popular serie de comedia de situación estadounidense que narra la vida cotidiana de un grupo de empleados de la ficticia empresa Dunder Mifflin Paper Company en Scranton , Pensilvania",
-        "trailer": "https://www.youtube.com/watch?v=vyq1FCeFrng",
-        "iframe": "https://www.youtube.com/embed/vyq1FCeFrng?si=ie9e1jLa7AX0mRPW",
-        "elenco": [
-            "Steve Carell",
-            "Rainn Wilson",
-            "John Krasinski",
-            "Jenna Fischer",
-            "B. J. Novak"
-        ],
-        "directores": [
-            "Amy Heckerling",
-            "Greg Daniels",
-            "Bryan Gordon",
-            "Ken Kwapis",
-            "Ken Whittingham"
-        ],
-        "productores": [
-            ""
-        ],
-        "temporadas": [
-            "Temporada 1",
-            "Temporada 2",
-            "Temporada 3",
-            "Temporada 4",
-            "Temporada 5",
-            "Temporada 6",
-            "Temporada 7",
-            "Temporada 8",
-            "Temporada 9"
-        ],
-        "capitulos": [
-            "Capitulo 1",
-            "Capitulo 2",
-            "Capitulo 3",
-            "Capitulo 4",
-            "Capitulo 5",
-            "Capitulo 6",
-            "Capitulo 7",
-            "Capitulo 8",
-            "Capitulo 9",
-            "... 201"
-        ]
-    }
+ {
+    "imagen": "../assets/2025-05-17_21h32_07.png",
+    "heroimg": null,
+    "titulo": "21 Black Jack",
+    "clasificacion": null,
+    "año": null,
+    "genero": ["Drama", "Crimen"],
+    "descripcion": "Un grupo de estudiantes de élite del MIT usa sus habilidades para contar cartas para ganar en los casinos de Las Vegas. Motivados por el dinero y la emoción, se adentran en un mundo de lujos y peligros.",
+    "resumen": "Ben Campbell, un brillante estudiante del MIT, es reclutado por un grupo de jóvenes prodigios para unirse a un equipo de conteo de cartas. Sus hazañas les permiten ganar fortunas, pero las trampas los llevan a enfrentar grandes riesgos.",
+    "trailer": "https://www.youtube.com/watch?v=Z_674SlrEhU",
+    "iframe": "https://www.youtube.com/@TwoCatsVideoProduction/streams",
+    "elenco": [
+      "Jim Sturgess",
+      "Kevin Spacey",
+      "Kate Bosworth",
+      "Laurence Fishburne"
+    ],
+    "directores": [],
+    "productores": [],
+    "temporadas": 0,
+    "capitulos": 0
+  },
+  {
+    "imagen": "../assets/image.png",
+    "heroimg": null,
+    "titulo": "Doble de Amor",
+    "clasificacion": null,
+    "año": null,
+    "genero": ["Comedia", "Romance"],
+    "descripcion": "Dos chicas idénticas, de diferentes orígenes sociales, se encuentran y deciden intercambiar lugares para vivir una aventura y, tal vez, encontrar el amor.",
+    "resumen": "Alyssa y Amanda, idénticas pero desconocidas, se encuentran en un campamento de verano y deciden cambiar vidas para unir a sus respectivos padres solteros. Lo que sigue es una serie de divertidas confusiones y un toque de romance.",
+    "trailer": "img.youtube.com/vi/ID/hqdefault.jpg",
+    "iframe": "https://img.youtube.com/vi/VIDEO_ID/hqdefault.jpg",
+    "elenco": [
+      "Mary-Kate Olsen",
+      "Ashley Olsen",
+      "Steve Guttenberg",
+      "Kirstie Alley"
+    ],
+    "directores": [],
+    "productores": [],
+    "temporadas": 0,
+    "capitulos": 0
+  },
+  {
+    "imagen": "../assets/2025-05-17_21h26_01.png",
+    "heroimg": null,
+    "titulo": "El Descanso",
+    "clasificacion": null,
+    "año": null,
+    "genero": ["Comedia", "Romance"],
+    "descripcion": "Dos mujeres, una en Los Ángeles y otra en Londres, intercambian casas durante las vacaciones para escapar de sus problemas sentimentales, y encuentran el amor en lugares inesperados.",
+    "resumen": "Iris y Amanda, ambas con problemas amorosos, deciden intercambiar casas para Navidad. Iris viaja a una mansión en Los Ángeles, y Amanda a una acogedora cabaña en la campiña inglesa, donde ambas descubren nuevas perspectivas y el amor.",
+    "trailer": "https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg",
+    "iframe": "https://img.youtube.com/vi/$",
+    "elenco": [
+      "Cameron Diaz",
+      "Kate Winslet",
+      "Jude Law",
+      "Jack Black"
+    ],
+    "directores": [],
+    "productores": [],
+    "temporadas": 0,
+    "capitulos": 0
+  },
+  {
+    "imagen": "../assets/2025-05-17_21h25_19.png",
+    "heroimg": null,
+    "titulo": "Escape Room",
+    "clasificacion": null,
+    "año": null,
+    "genero": ["Thriller", "Terror"],
+    "descripcion": "Seis extraños se encuentran en una serie de salas de escape mortales, y deben usar su ingenio para sobrevivir a los desafíos mortales.",
+    "resumen": "Un grupo de personas se une para participar en un escape room, solo para descubrir que es un juego mortal donde deben resolver acertijos para escapar de trampas mortales y sobrevivir.",
+    "trailer": "https://www.youtube.com/watch?v=9en2brDsbH4",
+    "iframe": "https://www.youtube.com/watch?v=5-eHJ586ID4",
+    "elenco": [
+      "Taylor Russell",
+      "Logan Miller",
+      "Deborah Ann Woll"
+    ],
+    "directores": [],
+    "productores": [],
+    "temporadas": 0,
+    "capitulos": 0
+  },
+  {
+    "imagen": "../assets/2025-05-17_21h22_44.png",
+    "heroimg": null,
+    "titulo": "Estado Eléctrico",
+    "clasificacion": null,
+    "año": null,
+    "genero": ["Ciencia ficción", "Acción"],
+    "descripcion": "En un futuro cercano, la tecnología ha avanzado a pasos agigantados, pero la humanidad se enfrenta a una crisis de energía y a la amenaza de una inteligencia artificial descontrolada.",
+    "resumen": "Una mujer busca a su hija perdida en un mundo post-apocalíptico donde la tecnología se ha vuelto contra la humanidad. En su viaje, descubre secretos sobre la caída de la civilización y lucha por sobrevivir.",
+    "trailer": "https://www.youtube.com/watch?v=au2Zq8D9RaY",
+    "iframe": "https://www.youtube.com/embed/au2Zq8D9RaY?si=uD-8ST23VjoB2dCU",
+    "elenco": [
+      "Michelle Yeoh",
+      "Jason Isaacs",
+      "Melanie Thierry"
+    ],
+    "directores": [],
+    "productores": [],
+    "temporadas": 0,
+    "capitulos": 0
+  },
+  {
+    "imagen": "../assets/2025-05-17_21h24_03.png",
+    "heroimg": null,
+    "titulo": "Lucy",
+    "clasificacion": null,
+    "año": null,
+    "genero": ["Ciencia ficción", "Acción"],
+    "descripcion": "Una mujer, tras ser obligada a ejercer de mula de una nueva y potente droga, adquiere habilidades sobrehumanas al activarse todo el potencial de su cerebro.",
+    "resumen": "Lucy, una estudiante en Taipéi, se ve envuelta en un oscuro negocio de drogas. Tras ser expuesta a una sustancia experimental, su cerebro comienza a operar a niveles extraordinarios, otorgándole poderes telequinéticos y una comprensión total del universo.",
+    "trailer": "https://youtu.be/tG6t4",
+    "iframe": "https://youtu.be/tG6t5",
+    "elenco": [
+      "Scarlett Johansson",
+      "Morgan Freeman",
+      "Choi Min-sik"
+    ],
+    "directores": [],
+    "productores": [],
+    "temporadas": 0,
+    "capitulos": 0
+  },
+  {
+    "imagen": "../assets/2025-05-19_13h15_25.png",
+    "heroimg": null,
+    "titulo": "Noches de Encanto",
+    "clasificacion": null,
+    "año": null,
+    "genero": ["Musical", "Drama"],
+    "descripcion": "Una joven talentosa se embarca en un viaje para perseguir sus sueños de convertirse en una estrella, pero se enfrenta a desafíos en el camino.",
+    "resumen": "Ali Rose, una chica de Iowa, llega a Los Ángeles con grandes sueños y encuentra trabajo en un club burlesque. Con su impresionante voz, Ali pronto se convierte en la estrella del show, pero la envidia y las dificultades amenazan su ascenso.",
+    "trailer": "https://youtu.be/tG6t6",
+    "iframe": "https://youtu.be/tG6t7",
+    "elenco": [
+      "Christina Aguilera",
+      "Cher",
+      "Kristen Bell",
+      "Stanley Tucci"
+    ],
+    "directores": [],
+    "productores": [],
+    "temporadas": 0,
+    "capitulos": 0
+  },
+  {
+    "imagen": "../assets/2025-05-17_21h25_09.png",
+    "heroimg": null,
+    "titulo": "Norbit",
+    "clasificacion": null,
+    "año": null,
+    "genero": ["Comedia", "Romance"],
+    "descripcion": "Un hombre dócil, Norbit, está atrapado en un matrimonio con la enorme y dominante Rasputia. Cuando su amor de la infancia regresa a la ciudad, Norbit intenta liberarse de Rasputia para estar con ella.",
+    "resumen": "Norbit Albert Rice es un hombre desafortunado que, desde pequeño, ha estado bajo el control de Rasputia. Cuando Kate, su amor de la infancia, regresa, Norbit debe encontrar la forma de romper con Rasputia y ganarse el corazón de Kate.",
+    "trailer": "https://youtu.be/tG6t8",
+    "iframe": "https://youtu.be/tG6t9",
+    "elenco": [
+      "Eddie Murphy",
+      "Thandie Newton",
+      "Terry Crews"
+    ],
+    "directores": [],
+    "productores": [],
+    "temporadas": 0,
+    "capitulos": 0
+  },
+  {
+    "imagen": "../assets/2025-05-19_13h16_27.png",
+    "heroimg": null,
+    "titulo": "Notas Perfectas",
+    "clasificacion": null,
+    "año": null,
+    "genero": ["Comedia", "Musical"],
+    "descripcion": "Un grupo de chicas universitarias forma un coro a cappella y compiten en el competitivo mundo de los campeonatos de música vocal.",
+    "resumen": "Beca, una estudiante con sueños de DJ, es forzada a unirse a un grupo de canto a cappella femenino. A medida que se preparan para las competencias, las chicas deben aprender a trabajar juntas y encontrar su propia voz.",
+    "trailer": "https://www.youtube.com/watch?v=Mz3Eoin0",
+    "iframe": "https://www.youtube.com/watch?v=Mz3Eoin1",
+    "elenco": [
+      "Anna Kendrick",
+      "Rebel Wilson",
+      "Skylar Astin",
+      "Brittany Snow"
+    ],
+    "directores": [],
+    "productores": [],
+    "temporadas": 0,
+    "capitulos": 0
+  },
+  {
+    "imagen": "../assets/2025-05-17_21h31_42.png",
+    "heroimg": null,
+    "titulo": "Shrek 2",
+    "clasificacion": null,
+    "año": null,
+    "genero": ["Animación", "Comedia", "Fantasía"],
+    "descripcion": "Shrek y Fiona regresan de su luna de miel y deben enfrentarse a los padres de Fiona, quienes no están muy contentos con el matrimonio.",
+    "resumen": "Shrek y Fiona viajan al Reino de Muy Muy Lejano para conocer a los padres de Fiona. Sin embargo, su unión no es bien vista, y una serie de eventos hilarantes y peligrosos ponen a prueba su amor, con la ayuda de Burro y el Gato con Botas.",
+    "trailer": "https://www.youtube.com/watch?v=Mz3Eoin2",
+    "iframe": "https://www.youtube.com/watch?v=Mz3Eoin3",
+    "elenco": [
+      "Mike Myers",
+      "Eddie Murphy",
+      "Cameron Diaz",
+      "Antonio Banderas"
+    ],
+    "directores": [],
+    "productores": [],
+    "temporadas": 0,
+    "capitulos": 0
+  },
+  {
+    "imagen": "../assets/2025-05-17_21h22_34.png",
+    "heroimg": null,
+    "titulo": "Sydney White",
+    "clasificacion": null,
+    "año": null,
+    "genero": ["Comedia", "Romance", "Adolescente"],
+    "descripcion": "Una joven se une a un grupo de inadaptados para derrocar a la malvada reina de la hermandad y reclamar su lugar en la universidad.",
+    "resumen": "Sydney White, una estudiante de primer año, intenta unirse a la hermandad de su difunta madre, pero es rechazada por la líder. Encuentra refugio con siete marginados, y juntos planean derrocar a la hermandad corrupta.",
+    "trailer": "https://www.youtube.com/watch?v=Mz3Eoin4",
+    "iframe": "https://www.youtube.com/watch?v=Mz3Eoin5",
+    "elenco": [
+      "Amanda Bynes",
+      "Sara Paxton",
+      "Matt Long",
+      "Jack Carpenter"
+    ],
+    "directores": [],
+    "productores": [],
+    "temporadas": 0,
+    "capitulos": 0
+  },
+  {
+    "imagen": "../assets/2025-05-17_21h25_39.png",
+    "heroimg": null,
+    "titulo": "Truman Show",
+    "clasificacion": null,
+    "año": null,
+    "genero": ["Drama", "Ciencia ficción", "Comedia"],
+    "descripcion": "Un hombre descubre que toda su vida ha sido un reality show televisado, con todos a su alrededor siendo actores.",
+    "resumen": "Truman Burbank vive una vida aparentemente perfecta en un idílico pueblo, pero poco a poco comienza a darse cuenta de que algo no encaja. Descubre que es el protagonista de un reality show televisivo y que cada aspecto de su vida ha sido orquestado para la televisión.",
+    "trailer": "https://www.youtube.com/watch?v=Mz3Eoin6",
+    "iframe": "https://www.youtube.com/watch?v=Mz3Eoin7",
+    "elenco": [
+      "Jim Carrey",
+      "Laura Linney",
+      "Ed Harris"
+    ],
+    "directores": [],
+    "productores": [],
+    "temporadas": 0,
+    "capitulos": 0
+  },
+  {
+    "imagen": "../assets/2025-05-19_16h48_05.png",
+    "heroimg": null,
+    "titulo": "13 razones",
+    "clasificacion": null,
+    "año": null,
+    "genero": ["Drama", "Misterio"],
+    "descripcion": "Serie estadounidense de drama y misterio para adolescentes basada en la novela de 2007 Por trece razones de Jay Asher. La trama gira en torno a una estudiante de secundaria, Clay Jensen, y su amiga Hannah Baker, quien se suicida después de experimentar una serie de fracasos, provocados por individuos selectos dentro de su escuela. Una caja de casetes grabados por Hannah antes de su suicidio detalla las trece razones por las que decidió acabar con su vida.",
+    "resumen": null,
+    "trailer": "https://youtu.be/Ao8",
+    "iframe": "https://youtu.be/Ao8",
+    "elenco": ["Dylan Minnette", "Katherine Langford", "Christian Navarro"],
+    "directores": [],
+    "productores": [],
+    "temporadas": 0,
+    "capitulos": 0
+  },
+  {
+    "imagen": "../assets/2025-05-19_16h47_51.png",
+    "heroimg": null,
+    "titulo": "Anne with E",
+    "clasificacion": null,
+    "año": null,
+    "genero": ["Drama", "Familia"],
+    "descripcion": "Una historia sobre el paso a la edad adulta acerca de una huérfana, que tras una infancia de abusos, llega por error a la casa de dos hermanos solteros de mediana edad. Con el tiempo, Anne, de 13 años, transformará la vida de Marilla y Matthew Cuthbert y los habitantes de Avonlea gracias a su singular espíritu, intelecto brillante e imaginación vivaz.",
+    "resumen": null,
+    "trailer": "https://youtu.be/VRe5XeXs1i8",
+    "iframe": "https://youtu.be/VRe5XeXs1i8",
+    "elenco": ["Amybeth McNulty", "Geraldine James", "R.H. Thomson"],
+    "directores": [],
+    "productores": [],
+    "temporadas": 0,
+    "capitulos": 0
+  },
+  {
+    "imagen": "../assets/2025-05-19_16h47_44.png",
+    "heroimg": null,
+    "titulo": "Black Mirror",
+    "clasificacion": null,
+    "año": null,
+    "genero": ["Ciencia ficción", "Drama", "Antología"],
+    "descripcion": "Serie de ciencia ficción antológica que explora un futuro distópico donde la tecnología ha alcanzado un nivel avanzado, pero a su vez ha corrompido la naturaleza humana. Cada episodio presenta una historia independiente con personajes y situaciones diferentes, donde se abordan temas como la adicción a las redes sociales, la inteligencia artificial, la privacidad y la realidad virtual, entre otros.",
+    "resumen": null,
+    "trailer": "https://youtu.be/tG6t",
+    "iframe": "https://youtu.be/tG6t",
+    "elenco": ["Jesse Plemons", "Cristin Milioti", "Daniel Kaluuya"],
+    "directores": [],
+    "productores": [],
+    "temporadas": 0,
+    "capitulos": 0
+  },
+  {
+    "imagen": "../assets/2025-05-19_16h47_30.png",
+    "heroimg": null,
+    "titulo": "Breaking Bad",
+    "clasificacion": null,
+    "año": null,
+    "genero": ["Drama", "Crimen", "Thriller"],
+    "descripcion": "Un profesor de química de escuela secundaria con cáncer de pulmón inoperable se dedica a fabricar y vender metanfetamina con un antiguo alumno para asegurar el futuro financiero de su familia.",
+    "resumen": null,
+    "trailer": "https://www.youtube.com/watch?v=Mz3Eoin",
+    "iframe": "https://www.youtube.com/watch?v=Mz3Eoin",
+    "elenco": ["Bryan Cranston", "Aaron Paul", "Anna Gunn"],
+    "directores": [],
+    "productores": [],
+    "temporadas": 0,
+    "capitulos": 0
+  },
+  {
+    "imagen": "../assets/2025-05-19_16h48_24.png",
+    "heroimg": null,
+    "titulo": "Bridgerton",
+    "clasificacion": null,
+    "año": null,
+    "genero": ["Drama", "Romance"],
+    "descripcion": "Durante el período de la Regencia en Londres, ocho hermanos muy unidos de la poderosa familia Bridgerton intentan encontrar el amor y la felicidad.",
+    "resumen": null,
+    "trailer": "https://youtu.be/lJJnjfnyLZo?si=",
+    "iframe": "https://youtu.be/lJJnjfnyLZo?si=",
+    "elenco": ["Phoebe Dynevor", "Regé-Jean Page", "Nicola Coughlan"],
+    "directores": [],
+    "productores": [],
+    "temporadas": 0,
+    "capitulos": 0
+  },
+  {
+    "imagen": "../assets/2025-05-19_16h48_10.png",
+    "heroimg": null,
+    "titulo": "Dark",
+    "clasificacion": null,
+    "año": null,
+    "genero": ["Ciencia ficción", "Thriller", "Misterio"],
+    "descripcion": "La desaparición de dos niños en el pueblo alemán de Winden abre abismos que cambian el concepto de tiempo. La pregunta no es quién, sino cuándo.",
+    "resumen": null,
+    "trailer": "https://youtu.be/_I1nBZ9ExGU",
+    "iframe": "https://youtu.be/_I1nBZ9ExGU",
+    "elenco": ["Louis Hofmann", "Oliver Masucci", "Jordis Triebel"],
+    "directores": [],
+    "productores": [],
+    "temporadas": 0,
+    "capitulos": 0
+  },
+  {
+    "imagen": "../assets/2025-05-19_16h48_02.png",
+    "heroimg": null,
+    "titulo": "Gilmore Girls",
+    "clasificacion": null,
+    "año": null,
+    "genero": ["Comedia", "Drama"],
+    "descripcion": "Una madre soltera de treinta y tantos años y su hija adolescente son las mejores amigas y comparten sus aventuras diarias y grandes sueños en una pequeña y excéntrica ciudad de Connecticut.",
+    "resumen": null,
+    "trailer": "https://www.youtube.com/watch?v=qMjX",
+    "iframe": "https://www.youtube.com/watch?v=qMjX",
+    "elenco": ["Lauren Graham", "Alexis Bledel", "Kelly Bishop"],
+    "directores": [],
+    "productores": [],
+    "temporadas": 0,
+    "capitulos": 0
+  },
+  {
+    "imagen": "../assets/2025-05-19_16h47_37.png",
+    "heroimg": null,
+    "titulo": "Gossip Girl",
+    "clasificacion": null,
+    "año": null,
+    "genero": ["Drama", "Romance", "Adolescentes"],
+    "descripcion": "La vida de un grupo de estudiantes privilegiados del Upper East Side de Nueva York se ve alterada por la omnipresente y anónima blogger 'Gossip Girl', que desvela todos sus secretos y escándalos.",
+    "resumen": null,
+    "trailer": "https://youtu.be/P8j0y-L9zjk",
+    "iframe": "https://youtu.be/P8j0y-L9zjk",
+    "elenco": ["Blake Lively", "Leighton Meester", "Penn Badgley"],
+    "directores": [],
+    "productores": [],
+    "temporadas": 0,
+    "capitulos": 0
+  },
+  {
+    "imagen": "../assets/2025-05-19_16h47_24.png",
+    "heroimg": null,
+    "titulo": "La Ley de los Audaces",
+    "clasificacion": null,
+    "año": null,
+    "genero": ["Drama", "Legal"],
+    "descripcion": "Sigue las vidas de los abogados que trabajan en una importante firma de abogados de Boston. La serie explora sus relaciones personales, sus dilemas éticos y los complejos casos legales que enfrentan en el tribunal.",
+    "resumen": null,
+    "trailer": "https://www.youtube.com/watch?v=",
+    "iframe": "https://www.youtube.com/watch?v=",
+    "elenco": ["James Spader", "William Shatner", "Candice Bergen"],
+    "directores": [],
+    "productores": [],
+    "temporadas": 0,
+    "capitulos": 0
+  },
+  {
+    "imagen": "../assets/2025-05-19_16h47_08.png",
+    "heroimg": null,
+    "titulo": "Prison Break",
+    "clasificacion": null,
+    "año": null,
+    "genero": ["Acción", "Crimen", "Drama"],
+    "descripcion": "Un hombre es sentenciado a muerte por un crimen que no cometió, y su hermano, un genio de la ingeniería, crea un elaborado plan para sacarlo de la cárcel.",
+    "resumen": null,
+    "trailer": "https://www.youtube.com/watch?v=brBoQ0pc",
+    "iframe": "https://www.youtube.com/watch?v=brBoQ0pc",
+    "elenco": ["Wentworth Miller", "Dominic Purcell", "Amaury Nolasco"],
+    "directores": [],
+    "productores": [],
+    "temporadas": 0,
+    "capitulos": 0
+  },
+  {
+    "imagen": "../assets/2025-05-19_16h47_17.png",
+    "heroimg": null,
+    "titulo": "The Good Place",
+    "clasificacion": null,
+    "año": null,
+    "genero": ["Comedia", "Fantasia"],
+    "descripcion": "Debido a un error, Eleanor Shellstrop, una mujer egoísta, termina en el Cielo. Para evitar ser enviada al infierno, intenta convertirse en una buena persona.",
+    "resumen": null,
+    "trailer": "https://www.youtube.com/watch?v=SVG1YGdo",
+    "iframe": "https://www.youtube.com/watch?v=SVG1YGdo",
+    "elenco": ["Kristen Bell", "Ted Danson", "William Jackson Harper"],
+    "directores": [],
+    "productores": [],
+    "temporadas": 0,
+    "capitulos": 0
+  },
+  {
+    "imagen": "../assets/2025-05-19_16h46_55.png",
+    "heroimg": null,
+    "titulo": "You",
+    "clasificacion": null,
+    "año": null,
+    "genero": ["Drama", "Crimen", "Thriller"],
+    "descripcion": "Un joven acosador se obsesiona con las mujeres de las que se enamora, acechándolas y eliminando cualquier obstáculo en su camino, incluso si eso significa recurrir a la violencia.",
+    "resumen": null,
+    "trailer": "https://www.youtube.com/watch?v=xyNYkd2k",
+    "iframe": "https://www.youtube.com/watch?v=xyNYkd2k",
+    "elenco": ["Penn Badgley", "Victoria Pedretti", "Elizabeth Lail"],
+    "directores": [],
+    "productores": [],
+    "temporadas": 0,
+    "capitulos": 0
+  }
 ];
