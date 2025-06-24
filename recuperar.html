@@ -35,11 +35,23 @@
             />
           </label>
         </fieldset>
+        <!-- estatico 
         <div class="links">
           <a href="index.html" class="btn">ENVIAR EMAIL</a>
           <a href="index.html" class="btn">CANCELAR</a>
         </div>
+        -->
+
+        <div class="links">
+          <button type="button" class="btn" id="btn-enviar" disabled>
+            ENVIAR EMAIL
+          </button>
+          <button type="button" class="btn" id="btn-cancelar">CANCELAR</button>
+        </div>
+        <p id="mensaje" style="text-align: center; font-size: 1rem"></p>
       </form>
     </div>
+    <script src="js/recuperar.js"></script>
   </body>
 </html>
+
