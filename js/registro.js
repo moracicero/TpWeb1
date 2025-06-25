@@ -120,6 +120,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const usuariosGuardados =
       JSON.parse(localStorage.getItem("usuarios")) || [];
 
+    //me limita la cantidad de usuarios que puedo registrar
+    if (usuariosGuardados.length >= 5) {
+      alert("Límite de usuarios alcanzado. No se pueden registrar más.");
+      return;
+    }
+
     const yaExiste = usuariosGuardados.some(
       (u) => u.usuario === nuevoUsuario.usuario
     );
