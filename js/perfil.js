@@ -112,16 +112,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const metodo = document.querySelector(
       'input[name="tarjeta-cupon-transferencia"]:checked'
     )?.value;
+
     const nuevoUsuario = {
       ...usuario,
       email: emailInput.value,
       metodoPago: metodo,
     };
 
+    // Cambiar contraseña si fue ingresada
     if (contraseniaInput.value) {
-      nuevoUsuario.password = contraseniaInput.value;
+      nuevoUsuario.contrasenia = contraseniaInput.value;
+      delete nuevoUsuario.password; // 💥 eliminar campo incorrecto si existía
     }
 
+    // Actualizar método de pago
     if (metodo === "tarjeta") {
       nuevoUsuario.numeroTarjeta = numeroTarjeta.value;
       nuevoUsuario.codigoSeguridad = codigoSeguridad.value;
@@ -138,7 +142,18 @@ document.addEventListener("DOMContentLoaded", () => {
       delete nuevoUsuario.formaPago;
     }
 
+    // Guardar como usuario activo
     localStorage.setItem("usuario", JSON.stringify(nuevoUsuario));
+
+    // Actualizar en el array de usuarios
+    const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+    const index = usuarios.findIndex((u) => u.usuario === nuevoUsuario.usuario); // Buscar por "usuario"
+
+    if (index !== -1) {
+      usuarios[index] = nuevoUsuario;
+      localStorage.setItem("usuarios", JSON.stringify(usuarios));
+    }
+
     alert("Datos actualizados correctamente.");
   });
 
@@ -159,3 +174,4 @@ document.addEventListener("DOMContentLoaded", () => {
   // Validación inicial
   validarFormulario();
 });
+
