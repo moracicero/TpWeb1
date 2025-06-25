@@ -15,9 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let msg = document.createElement("span");
     msg.style.color = "red";
     msg.style.fontSize = "0.8rem";
-    msg.classList.add("error-msg");
+    msg.classList.add("error-msg"); // por si querés aplicar estilos desde el CSS también le agrega esta clase
     input.insertAdjacentElement("afterend", msg);
-    return msg;
+    return msg; //--me devuelve el mensaje de error en span abajo del input si es que lo hay
   };
 
   const errores = {
@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const usuariosGuardados =
       JSON.parse(localStorage.getItem("usuarios")) || [];
 
-    //me limita la cantidad de usuarios que puedo registrar
+    //me limita la cantidad de usuarios
     if (usuariosGuardados.length >= 5) {
       alert("Límite de usuarios alcanzado. No se pueden registrar más.");
       return;
@@ -151,3 +151,4 @@ document.addEventListener("DOMContentLoaded", function () {
   // Iniciar validación inicial
   actualizarEstado();
 });
+
