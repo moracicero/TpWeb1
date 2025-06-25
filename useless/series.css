@@ -1,0 +1,112 @@
+/* ---------- GENERAL ---------- */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffeaf4;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- TITULO ---------- */
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 20px;
+  color: #ec4a8c;
+}
+
+/* ---------- FILTROS ---------- */
+.filtros {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #fdd6e5;
+  gap: 10px;
+}
+
+.filtros label,
+.filtros select,
+.filtros input,
+.filtros button {
+  font-size: 16px;
+}
+
+.busqueda {
+  display: flex;
+  gap: 10px;
+}
+
+.busqueda input {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.busqueda button {
+  background-color: #ec4a8c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.busqueda button:hover {
+  background-color: #c13a70;
+}
+
+/* ---------- GRILLA ---------- */
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  flex: 1;
+}
+
+.grilla h3 {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  margin-top: 8px;
+  font-weight: normal;
+}
+
+.grilla a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.grilla img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.grilla img:hover {
+  transform: scale(1.03);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media screen and (max-width: 768px) {
+  .filtros {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .busqueda {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .busqueda input,
+  .busqueda button {
+    width: 100%;
+  }
+}
