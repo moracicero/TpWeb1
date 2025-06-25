@@ -10,14 +10,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const tarjetaInput = document.getElementById("numeroTarjeta");
   const codigoInput = document.getElementById("codigoSeguridad");
 
-  // Crear contenedores de error
+
   const crearMensajeError = (input) => {
     let msg = document.createElement("span");
     msg.style.color = "red";
     msg.style.fontSize = "0.8rem";
-    msg.classList.add("error-msg"); // por si querés aplicar estilos desde el CSS también le agrega esta clase
+    msg.classList.add("error-msg");
     input.insertAdjacentElement("afterend", msg);
-    return msg; //--me devuelve el mensaje de error en span abajo del input si es que lo hay
+    return msg; 
   };
 
   const errores = {
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
     return esValido;
   };
 
-  // Habilita/deshabilita el botón al escribir
+ 
   form.addEventListener("input", actualizarEstado);
 
   confirmarBtn.addEventListener("click", function (e) {
@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const usuariosGuardados =
       JSON.parse(localStorage.getItem("usuarios")) || [];
 
-    //me limita la cantidad de usuarios
+  
     if (usuariosGuardados.length >= 5) {
       alert("Límite de usuarios alcanzado. No se pueden registrar más.");
       return;
@@ -141,14 +141,14 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location.href = "index.html";
   });
 
-  // Botón cancelar
+ 
   const cancelarBtn = document.querySelectorAll(".btn")[1];
   cancelarBtn.addEventListener("click", function (e) {
     e.preventDefault();
     window.location.href = "index.html";
   });
 
-  // Iniciar validación inicial
+
   actualizarEstado();
 });
 
