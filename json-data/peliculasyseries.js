@@ -875,15 +875,15 @@ const DATA_PELISYSERIES = [
     "elenco": [
       {
         "nombre": "Cameron Diaz",
-        "link": ""
+        "link": "https://es.wikipedia.org/wiki/Cameron_Diaz"
       },
       {
         "nombre": "Kate Winslet",
-        "link": ""
+        "link": "https://es.wikipedia.org/wiki/Kate_Winslet"
       },
       {
         "nombre": "Jude Law",
-        "link": ""
+        "link": "https://es.wikipedia.org/wiki/Jude_Law"
       }
     ],
     "temporadas": 0,
