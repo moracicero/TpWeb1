@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: #ff8da1;
+  color: #fff;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.title {
+  /*le baje un poco el tamaño del h1*/
+  font-size: 2.1rem;
+  margin-bottom: 10px;
+  color: #e75480;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #e75480;
+}
+
+.login-form {
+  background: #e75480;
+  padding: 20px 30px;
+  border-radius: 8px;
+  width: 100%;
+  /*le baje un poco el maximo ancho del form*/
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/*aca se agrego el campo email*/
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  padding: 8px 12px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.btn {
+  background-color: #ff8da1;
+  color: white;
+  font-weight: bold;
+  padding: 12px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff8da1;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+
+

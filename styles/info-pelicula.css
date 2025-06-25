@@ -1,0 +1,133 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fef1f6;
+  color: #333;
+}
+
+.header {
+  background-color: #e75480;
+  padding: 15px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header nav ul li {
+  margin: 0 20px;
+}
+
+.header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+main {
+  padding: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.detalle-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.detalle-info {
+  max-width: 500px;
+  flex: 1;
+}
+
+.detalle-info img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+button#verPeliculaBtn {
+  background-color: #e75480;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button#verPeliculaBtn:hover {
+  background-color: #c3446d;
+}
+
+.trailer iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 315px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.similares {
+  margin-top: 40px;
+}
+
+.similares h2 {
+  text-align: center;
+  color: #e75480;
+  margin-bottom: 20px;
+}
+
+.carrusel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 15px;
+  padding: 10px;
+}
+
+.carrusel::-webkit-scrollbar {
+  display: none;
+}
+
+.carrusel div {
+  min-width: 200px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  text-align: center;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.carrusel img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .detalle-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .detalle-info img {
+    max-width: 100%;
+  }
+}
