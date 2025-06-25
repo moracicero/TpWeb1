@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const btnCancelar = document.getElementById("btn-cancelar");
   const mensaje = document.getElementById("mensaje");
 
-  // Actualiza el estado del botón "ENVIAR EMAIL"
+ 
   function actualizarBoton() {
     const email = emailInput.value.trim();
     const usuario = userInput.value.trim();
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
   emailInput.addEventListener("input", actualizarBoton);
   userInput.addEventListener("input", actualizarBoton);
 
-  // Acción del botón ENVIAR EMAIL
+
   btnEnviar.addEventListener("click", function () {
     const email = emailInput.value.trim();
     const usuario = userInput.value.trim();
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
       mensaje.style.color = "green";
 
       setTimeout(() => {
-        window.location.href = "index.html"; // ir al login
+        window.location.href = "index.html"; 
       }, 2000);
     } else {
       mensaje.textContent = "Usuario o email incorrecto.";
@@ -40,11 +40,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Acción del botón CANCELAR
+
   btnCancelar.addEventListener("click", function () {
     window.location.href = "index.html"; // ir al login
   });
 
-  // Desactiva el botón al cargar la página
+  
   btnEnviar.disabled = true;
 });
