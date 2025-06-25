@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const usuario = JSON.parse(localStorage.getItem("usuario"));
 
-  // Elementos
+
   const nombreUsuario = document.getElementById("nombre-usuario");
   const emailInput = document.getElementById("email");
   const contraseniaInput = document.getElementById("ingresar-contrasenia");
@@ -19,12 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const btnCancelar = document.getElementById("btn-cancelar");
   const cerrarSesionBtn = document.getElementById("cerrar-sesion");
 
-  // Mostrar datos
+
   if (usuario) {
     nombreUsuario.textContent = usuario.nombre || "Usuario sin nombre";
     emailInput.value = usuario.email || "";
 
-    // Prellenar método de pago si existía
+   
     if (usuario.metodoPago === "tarjeta") {
       tarjetaRadio.checked = true;
       numeroTarjeta.value = usuario.numeroTarjeta || "";
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Validaciones auxiliares
+
   function validarPassword(password) {
     const regex =
       /^(?=(?:.*[A-Za-z]){2,})(?=(?:.*\d){2,})(?=(?:.*[!@#$%^&*()_+[\]{};':",.<>?\\|`~\-=/]){2,}).{8,}$/;
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btnGuardar.disabled = !valido;
   }
 
-  // Eventos
+
   [
     contraseniaInput,
     repetirContraseniaInput,
@@ -119,13 +119,13 @@ document.addEventListener("DOMContentLoaded", () => {
       metodoPago: metodo,
     };
 
-    // Cambiar contraseña si fue ingresada
+   
     if (contraseniaInput.value) {
       nuevoUsuario.contrasenia = contraseniaInput.value;
-      delete nuevoUsuario.password; // 💥 eliminar campo incorrecto si existía
+      delete nuevoUsuario.password; 
     }
 
-    // Actualizar método de pago
+  
     if (metodo === "tarjeta") {
       nuevoUsuario.numeroTarjeta = numeroTarjeta.value;
       nuevoUsuario.codigoSeguridad = codigoSeguridad.value;
@@ -142,12 +142,12 @@ document.addEventListener("DOMContentLoaded", () => {
       delete nuevoUsuario.formaPago;
     }
 
-    // Guardar como usuario activo
+   
     localStorage.setItem("usuario", JSON.stringify(nuevoUsuario));
 
-    // Actualizar en el array de usuarios
+  
     const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-    const index = usuarios.findIndex((u) => u.usuario === nuevoUsuario.usuario); // Buscar por "usuario"
+    const index = usuarios.findIndex((u) => u.usuario === nuevoUsuario.usuario); 
 
     if (index !== -1) {
       usuarios[index] = nuevoUsuario;
