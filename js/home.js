@@ -13,7 +13,8 @@ function renderizarGrilla(elementos) {
 
   elementos.forEach(item => {
     const card = document.createElement("a");
-    card.href = `detalle.html?titulo=${encodeURIComponent(item.titulo)}`;
+    const linkDetalle = item.tipo === "pelicula" ? "info-pelicula.html" : "info-series.html";
+    card.href = `${linkDetalle}?titulo=${encodeURIComponent(item.titulo)}`;
     card.innerHTML = `
       <img src="${item.imagen}" alt="${item.titulo}" />
       <h3>${item.titulo}</h3>
@@ -22,38 +23,36 @@ function renderizarGrilla(elementos) {
   });
 }
 
-// Filtrar por género y/o título
+// Filtrar por género y/o búsqueda
 function aplicarFiltros() {
-  const generoSeleccionado = selectGenero.value;
+  const generoSeleccionado = selectGenero.value.toLowerCase();
   const tituloBuscado = inputBusqueda.value.trim().toLowerCase();
 
-  let filtrados = data;
+  let filtrados = data.filter(item => {
+    // Filtro por género
+    const cumpleGenero =
+      generoSeleccionado === "todos" ||
+      (Array.isArray(item.genero)
+        ? item.genero.map(g => g.toLowerCase()).includes(generoSeleccionado)
+        : item.genero.toLowerCase() === generoSeleccionado);
 
-  // Filtro por género
-  if (generoSeleccionado !== "todos") {
-    filtrados = filtrados.filter(item => {
-      if (Array.isArray(item.genero)) {
-        return item.genero.map(g => g.toLowerCase()).includes(generoSeleccionado);
-      } else {
-        return item.genero.toLowerCase() === generoSeleccionado;
-      }
-    });
-  }
+    // Filtro por título parcial (no exacto)
+    const cumpleBusqueda =
+      tituloBuscado === "" ||
+      item.titulo.toLowerCase().includes(tituloBuscado);
 
-  // Filtro por búsqueda de texto
-  if (tituloBuscado !== "") {
-    filtrados = filtrados.filter(item =>
-      item.titulo.toLowerCase().includes(tituloBuscado)
-    );
-  }
+    return cumpleGenero && cumpleBusqueda;
+  });
 
   renderizarGrilla(filtrados);
 }
 
 // Cargar géneros únicos al <select>
 function cargarGeneros() {
-  const generosUnicos = [...new Set(data.flatMap(item => item.genero.map(g => g.toLowerCase())))];
-  
+  const generosUnicos = [...new Set(data.flatMap(item =>
+    Array.isArray(item.genero) ? item.genero.map(g => g.toLowerCase()) : [item.genero.toLowerCase()]
+  ))];
+
   selectGenero.innerHTML = '<option value="todos">Todos</option>';
 
   generosUnicos.forEach(genero => {
@@ -74,3 +73,4 @@ inputBusqueda.addEventListener("keyup", e => {
 // Inicialización
 cargarGeneros();
 renderizarGrilla(data);
+
