@@ -44,26 +44,32 @@ const DATA_PELISYSERIES = [
       {
         "nombre": "Tommy Dorfman",
         "link": "https://es.wikipedia.org/wiki/Tommy_Dorfman"
-      }
+      },
     ],
-       "temporadas": [
-        "Temporada 1",
-        "Temporada 2",
-        "Temporada 3"
-    ],
+   "temporadas": [
+  {
+    "numero": 1,
     "capitulos": [
-                "Capitulo 1",
-        "Capitulo 2",
-        "Capitulo 3",
-        "Capitulo 4",
-        "Capitulo 5",
-        "Capitulo 6",
-        "Capitulo 7",
-        "Capitulo 8",
-        "Capitulo 9",
-        "... 17"
+      { "titulo": "Capítulo 1", "enlace": "https://youtu.be/MBQKtOfMReI?si=-rR-F6prVpIY3pYY" },
+      { "titulo": "Capítulo 2", "enlace": "https://youtu.be/MBQKtOfMReI?si=-rR-F6prVpIY3pYY" }
     ]
   },
+  {
+    "numero": 2,
+    "capitulos": [
+      { "titulo": "Capítulo 1", "enlace": "https://youtu.be/MBQKtOfMReI?si=-rR-F6prVpIY3pYY" }
+    ]
+  },
+  {
+    "numero": 3,
+    "capitulos": [
+      { "titulo": "Capítulo 1", "enlace": "https://youtu.be/MBQKtOfMReI?si=-rR-F6prVpIY3pYY" },
+      { "titulo": "Capítulo 1", "enlace": "https://youtu.be/MBQKtOfMReI?si=-rR-F6prVpIY3pYY" },
+      { "titulo": "Capítulo 2", "enlace": "https://youtu.be/MBQKtOfMReI?si=-rR-F6prVpIY3pYY" }
+    ]
+  }
+   ]
+},
   {
     "tipo": "serie",
     "imagen": "assets/2025-05-19_16h47_51.png",
@@ -106,24 +112,30 @@ const DATA_PELISYSERIES = [
         "nombre": "Christian Martyn",
         "link": "https://es.wikipedia.org/wiki/Christian_Martyn_(actor)"
       }
-    ],
-       "temporadas": [
-        "Temporada 1",
-        "Temporada 2",
-        "Temporada 3"
-    ],
+     ],
+   "temporadas": [
+  {
+    "numero": 1,
     "capitulos": [
-                "Capitulo 1",
-        "Capitulo 2",
-        "Capitulo 3",
-        "Capitulo 4",
-        "Capitulo 5",
-        "Capitulo 6",
-        "Capitulo 7",
-        "Capitulo 8",
-        "Capitulo 9",
-        "... 17"
+      { "titulo": "Capítulo 1", "enlace": "https://youtu.be/VRe5XeXs1i8?si=OOIPK5cLZKWqUFHU" },
+      { "titulo": "Capítulo 2", "enlace": "https://youtu.be/VRe5XeXs1i8?si=OOIPK5cLZKWqUFHU" }
     ]
+  },
+  {
+    "numero": 2,
+    "capitulos": [
+      { "titulo": "Capítulo 1", "enlace": "https://youtu.be/VRe5XeXs1i8?si=OOIPK5cLZKWqUFHU" }
+    ]
+  },
+  {
+    "numero": 3,
+    "capitulos": [
+      { "titulo": "Capítulo 1", "enlace": "https://youtu.be/VRe5XeXs1i8?si=OOIPK5cLZKWqUFHU" },
+      { "titulo": "Capítulo 2", "enlace": "https://youtu.be/VRe5XeXs1i8?si=OOIPK5cLZKWqUFHU" },
+      { "titulo": "Capítulo 3", "enlace": "https://youtu.be/VRe5XeXs1i8?si=OOIPK5cLZKWqUFHU" }
+    ]
+  }
+   ]
   },
   {
     "tipo": "serie",
@@ -167,24 +179,30 @@ const DATA_PELISYSERIES = [
         "nombre": "Toby Kebbell",
         "link": "https://en.wikipedia.org/wiki/Toby_Kebbell"
       }
-    ],
-      "temporadas": [
-        "Temporada 1",
-        "Temporada 2",
-        "Temporada 3"
-    ],
+ ],
+   "temporadas": [
+  {
+    "numero": 1,
     "capitulos": [
-                "Capitulo 1",
-        "Capitulo 2",
-        "Capitulo 3",
-        "Capitulo 4",
-        "Capitulo 5",
-        "Capitulo 6",
-        "Capitulo 7",
-        "Capitulo 8",
-        "Capitulo 9",
-        "... 17"
+      { "titulo": "Capítulo 1", "enlace": "https://youtu.be/r8LEV1B3lrA?si=9CfrkNkDxprHRsfp" },
+      { "titulo": "Capítulo 2", "enlace": "https://youtu.be/r8LEV1B3lrA?si=9CfrkNkDxprHRsfp" }
     ]
+  },
+  {
+    "numero": 2,
+    "capitulos": [
+      { "titulo": "Capítulo 1", "enlace": "https://youtu.be/r8LEV1B3lrA?si=9CfrkNkDxprHRsfp" }
+    ]
+  },
+  {
+    "numero": 3,
+    "capitulos": [
+      { "titulo": "Capítulo 1", "enlace": "https://youtu.be/r8LEV1B3lrA?si=9CfrkNkDxprHRsfp" },
+      { "titulo": "Capítulo 2", "enlace": "https://youtu.be/r8LEV1B3lrA?si=9CfrkNkDxprHRsfp" },
+      { "titulo": "Capítulo 3", "enlace": "https://youtu.be/r8LEV1B3lrA?si=9CfrkNkDxprHRsfp" }
+    ]
+  }
+   ]
   },
   {
     "tipo": "serie",
@@ -228,24 +246,30 @@ const DATA_PELISYSERIES = [
         "nombre": "Bob Odenkirk",
         "link": "https://es.wikipedia.org/wiki/Bob_Odenkirk"
       }
-    ],
-    "temporadas": [
-        "Temporada 1",
-        "Temporada 2",
-        "Temporada 3"
-    ],
+ ],
+   "temporadas": [
+  {
+    "numero": 1,
     "capitulos": [
-                "Capitulo 1",
-        "Capitulo 2",
-        "Capitulo 3",
-        "Capitulo 4",
-        "Capitulo 5",
-        "Capitulo 6",
-        "Capitulo 7",
-        "Capitulo 8",
-        "Capitulo 9",
-        "... 17"
+      { "titulo": "Capítulo 1", "enlace": "https://www.youtube.com/watch?v=mXd1zTwcQ18" },
+      { "titulo": "Capítulo 2", "enlace": "https://www.youtube.com/watch?v=mXd1zTwcQ18" }
     ]
+  },
+  {
+    "numero": 2,
+    "capitulos": [
+      { "titulo": "Capítulo 1", "enlace": "https://www.youtube.com/watch?v=mXd1zTwcQ18" }
+    ]
+  },
+  {
+    "numero": 3,
+    "capitulos": [
+      { "titulo": "Capítulo 1", "enlace": "https://www.youtube.com/watch?v=mXd1zTwcQ18" },
+      { "titulo": "Capítulo 2", "enlace": "https://www.youtube.com/watch?v=mXd1zTwcQ18" },
+      { "titulo": "Capítulo 3", "enlace": "https://www.youtube.com/watch?v=mXd1zTwcQ18" }
+    ]
+  }
+   ]
   },
   {
     "tipo": "serie",
@@ -293,24 +317,30 @@ const DATA_PELISYSERIES = [
         "nombre": "Golda Rosheuvel",
         "link": "https://es.wikipedia.org/wiki/Golda_Rosheuvel"
       }
-    ],
-    "temporadas": [
-        "Temporada 1",
-        "Temporada 2",
-        "Temporada 3"
-    ],
+ ],
+   "temporadas": [
+  {
+    "numero": 1,
     "capitulos": [
-                "Capitulo 1",
-        "Capitulo 2",
-        "Capitulo 3",
-        "Capitulo 4",
-        "Capitulo 5",
-        "Capitulo 6",
-        "Capitulo 7",
-        "Capitulo 8",
-        "Capitulo 9",
-        "... 17"
+      { "titulo": "Capítulo 1", "enlace": "https://youtu.be/AdBweWvuG68?si=h37e1G1hqmRM3kC8" },
+      { "titulo": "Capítulo 2", "enlace": "https://youtu.be/AdBweWvuG68?si=h37e1G1hqmRM3kC8" }
     ]
+  },
+  {
+    "numero": 2,
+    "capitulos": [
+      { "titulo": "Capítulo 1", "enlace": "https://youtu.be/AdBweWvuG68?si=h37e1G1hqmRM3kC8" }
+    ]
+  },
+  {
+    "numero": 3,
+    "capitulos": [
+      { "titulo": "Capítulo 1", "enlace": "https://youtu.be/AdBweWvuG68?si=h37e1G1hqmRM3kC8" },
+      { "titulo": "Capítulo 2", "enlace": "https://youtu.be/AdBweWvuG68?si=h37e1G1hqmRM3kC8" },
+      { "titulo": "Capítulo 3", "enlace": "https://youtu.be/AdBweWvuG68?si=h37e1G1hqmRM3kC8" }
+    ]
+  }
+   ]
   },
   {
     "tipo": "serie",
@@ -358,24 +388,30 @@ const DATA_PELISYSERIES = [
         "nombre": "Karoline EichHorn",
         "link": "https://es.wikipedia.org/wiki/Karoline_Eichhorn"
       }
-    ],
-     "temporadas": [
-        "Temporada 1",
-        "Temporada 2",
-        "Temporada 3"
-    ],
+ ],
+   "temporadas": [
+  {
+    "numero": 1,
     "capitulos": [
-                "Capitulo 1",
-        "Capitulo 2",
-        "Capitulo 3",
-        "Capitulo 4",
-        "Capitulo 5",
-        "Capitulo 6",
-        "Capitulo 7",
-        "Capitulo 8",
-        "Capitulo 9",
-        "... 17"
+      { "titulo": "Capítulo 1", "enlace": "https://youtu.be/ESEUoa-mz2c?si=CoMvIZr5P_f_gQ4L" },
+      { "titulo": "Capítulo 2", "enlace": "https://youtu.be/ESEUoa-mz2c?si=CoMvIZr5P_f_gQ4L" }
     ]
+  },
+  {
+    "numero": 2,
+    "capitulos": [
+      { "titulo": "Capítulo 1", "enlace": "https://youtu.be/ESEUoa-mz2c?si=CoMvIZr5P_f_gQ4L" }
+    ]
+  },
+  {
+    "numero": 3,
+    "capitulos": [
+      { "titulo": "Capítulo 1", "enlace": "https://youtu.be/ESEUoa-mz2c?si=CoMvIZr5P_f_gQ4L" },
+      { "titulo": "Capítulo 2", "enlace": "https://youtu.be/ESEUoa-mz2c?si=CoMvIZr5P_f_gQ4L" },
+      { "titulo": "Capítulo 3", "enlace": "https://youtu.be/ESEUoa-mz2c?si=CoMvIZr5P_f_gQ4L" }
+    ]
+  }
+   ]
   },
   {
     "tipo": "serie",
@@ -415,24 +451,30 @@ const DATA_PELISYSERIES = [
         "nombre": "Edward Herrmann",
         "link": "https://es.wikipedia.org/wiki/Edward_Herrmann"
       }
-    ],
-    "temporadas": [
-        "Temporada 1",
-        "Temporada 2",
-        "Temporada 3"
-    ],
+ ],
+   "temporadas": [
+  {
+    "numero": 1,
     "capitulos": [
-                "Capitulo 1",
-        "Capitulo 2",
-        "Capitulo 3",
-        "Capitulo 4",
-        "Capitulo 5",
-        "Capitulo 6",
-        "Capitulo 7",
-        "Capitulo 8",
-        "Capitulo 9",
-        "... 17"
+      { "titulo": "Capítulo 1", "enlace": "https://www.youtube.com/watch?v=Ac47mma8XRA" },
+      { "titulo": "Capítulo 2", "enlace": "https://www.youtube.com/watch?v=Ac47mma8XRA" }
     ]
+  },
+  {
+    "numero": 2,
+    "capitulos": [
+      { "titulo": "Capítulo 1", "enlace": "https://www.youtube.com/watch?v=Ac47mma8XRA" }
+    ]
+  },
+  {
+    "numero": 3,
+    "capitulos": [
+      { "titulo": "Capítulo 1", "enlace": "https://www.youtube.com/watch?v=Ac47mma8XRA" },
+      { "titulo": "Capítulo 2", "enlace": "https://www.youtube.com/watch?v=Ac47mma8XRA" },
+      { "titulo": "Capítulo 3", "enlace": "https://www.youtube.com/watch?v=Ac47mma8XRA" }
+    ]
+  }
+   ]
   },
   {
     "tipo": "serie",
@@ -480,24 +522,30 @@ const DATA_PELISYSERIES = [
         "nombre": "Connor Paolo",
         "link": "https://es.wikipedia.org/wiki/Connor_Paolo"
       }
-    ],
-    "temporadas": [
-        "Temporada 1",
-        "Temporada 2",
-        "Temporada 3"
-    ],
+ ],
+   "temporadas": [
+  {
+    "numero": 1,
     "capitulos": [
-                "Capitulo 1",
-        "Capitulo 2",
-        "Capitulo 3",
-        "Capitulo 4",
-        "Capitulo 5",
-        "Capitulo 6",
-        "Capitulo 7",
-        "Capitulo 8",
-        "Capitulo 9",
-        "... 17"
+      { "titulo": "Capítulo 1", "enlace": "https://youtu.be/5f4vM9qofgs?si=3xCKeEP25ifh8_h5" },
+      { "titulo": "Capítulo 2", "enlace": "https://youtu.be/5f4vM9qofgs?si=3xCKeEP25ifh8_h5" }
     ]
+  },
+  {
+    "numero": 2,
+    "capitulos": [
+      { "titulo": "Capítulo 1", "enlace": "https://youtu.be/5f4vM9qofgs?si=3xCKeEP25ifh8_h5" }
+    ]
+  },
+  {
+    "numero": 3,
+    "capitulos": [
+      { "titulo": "Capítulo 1", "enlace": "https://youtu.be/5f4vM9qofgs?si=3xCKeEP25ifh8_h5" },
+      { "titulo": "Capítulo 2", "enlace": "https://youtu.be/5f4vM9qofgs?si=3xCKeEP25ifh8_h5" },
+      { "titulo": "Capítulo 3", "enlace": "https://youtu.be/5f4vM9qofgs?si=3xCKeEP25ifh8_h5" }
+    ]
+  }
+   ]
   },
   {
     "tipo": "serie",
@@ -537,24 +585,30 @@ const DATA_PELISYSERIES = [
         "nombre": "Melora Hardin",
         "link": "https://es.wikipedia.org/wiki/Melora_Hardin"
       }
-    ],
-       "temporadas": [
-        "Temporada 1",
-        "Temporada 2",
-        "Temporada 3"
-    ],
+ ],
+   "temporadas": [
+  {
+    "numero": 1,
     "capitulos": [
-                "Capitulo 1",
-        "Capitulo 2",
-        "Capitulo 3",
-        "Capitulo 4",
-        "Capitulo 5",
-        "Capitulo 6",
-        "Capitulo 7",
-        "Capitulo 8",
-        "Capitulo 9",
-        "... 17"
+      { "titulo": "Capítulo 1", "enlace": "https://www.youtube.com/watch?v=zA_ArpyNaZM" },
+      { "titulo": "Capítulo 2", "enlace": "https://www.youtube.com/watch?v=zA_ArpyNaZM" }
     ]
+  },
+  {
+    "numero": 2,
+    "capitulos": [
+     { "titulo": "Capítulo 1", "enlace": "https://www.youtube.com/watch?v=zA_ArpyNaZM" }
+    ]
+  },
+  {
+    "numero": 3,
+    "capitulos": [
+      { "titulo": "Capítulo 1", "enlace": "https://www.youtube.com/watch?v=zA_ArpyNaZM" },
+      { "titulo": "Capítulo 2", "enlace": "https://www.youtube.com/watch?v=zA_ArpyNaZM" },
+      { "titulo": "Capítulo 3", "enlace": "https://www.youtube.com/watch?v=zA_ArpyNaZM" }
+    ]
+  }
+   ]
   },
   {
     "tipo": "serie",
@@ -598,24 +652,30 @@ const DATA_PELISYSERIES = [
         "nombre": "William Fichtner",
         "link": "https://es.wikipedia.org/wiki/William_Fichtner"
       }
-    ],
-     "temporadas": [
-        "Temporada 1",
-        "Temporada 2",
-        "Temporada 3"
-    ],
+ ],
+   "temporadas": [
+  {
+    "numero": 1,
     "capitulos": [
-                "Capitulo 1",
-        "Capitulo 2",
-        "Capitulo 3",
-        "Capitulo 4",
-        "Capitulo 5",
-        "Capitulo 6",
-        "Capitulo 7",
-        "Capitulo 8",
-        "Capitulo 9",
-        "... 17"
+      { "titulo": "Capítulo 1", "enlace": "https://www.youtube.com/watch?v=m1W7fkFmY2Q" },
+      { "titulo": "Capítulo 2", "enlace": "https://www.youtube.com/watch?v=m1W7fkFmY2Q" }
     ]
+  },
+  {
+    "numero": 2,
+    "capitulos": [
+      { "titulo": "Capítulo 1", "enlace": "https://www.youtube.com/watch?v=m1W7fkFmY2Q" }
+    ]
+  },
+  {
+    "numero": 3,
+    "capitulos": [
+      { "titulo": "Capítulo 1", "enlace": "https://www.youtube.com/watch?v=m1W7fkFmY2Q" },
+      { "titulo": "Capítulo 2", "enlace": "https://www.youtube.com/watch?v=m1W7fkFmY2Q" },
+      { "titulo": "Capítulo 3", "enlace": "https://www.youtube.com/watch?v=m1W7fkFmY2Q" },
+    ]
+  }
+   ]
   },
   {
     "tipo": "serie",
@@ -655,24 +715,30 @@ const DATA_PELISYSERIES = [
         "nombre": "D'Arcy Carden",
         "link": "https://es.wikipedia.org/wiki/D%27Arcy_Carden"
       }
-    ],
-    "temporadas": [
-        "Temporada 1",
-        "Temporada 2",
-        "Temporada 3"
-    ],
+ ],
+   "temporadas": [
+  {
+    "numero": 1,
     "capitulos": [
-                "Capitulo 1",
-        "Capitulo 2",
-        "Capitulo 3",
-        "Capitulo 4",
-        "Capitulo 5",
-        "Capitulo 6",
-        "Capitulo 7",
-        "Capitulo 8",
-        "Capitulo 9",
-        "... 17"
+      { "titulo": "Capítulo 1", "enlace": "https://www.youtube.com/watch?v=9QxRbzFk3zk" },
+      { "titulo": "Capítulo 2", "enlace": "https://www.youtube.com/watch?v=9QxRbzFk3zk" }
     ]
+  },
+  {
+    "numero": 2,
+    "capitulos": [
+     { "titulo": "Capítulo 1", "enlace": "https://www.youtube.com/watch?v=9QxRbzFk3zk" }
+    ]
+  },
+  {
+    "numero": 3,
+    "capitulos": [
+      { "titulo": "Capítulo 1", "enlace": "https://www.youtube.com/watch?v=9QxRbzFk3zk" },
+      { "titulo": "Capítulo 2", "enlace": "https://www.youtube.com/watch?v=9QxRbzFk3zk" },
+      { "titulo": "Capítulo 3", "enlace": "https://www.youtube.com/watch?v=9QxRbzFk3zk" }
+    ]
+  }
+   ]
   },
   {
     "tipo": "serie",
@@ -708,24 +774,30 @@ const DATA_PELISYSERIES = [
         "nombre": "Tati Gabrielle",
         "link": "https://es.wikipedia.org/wiki/Tati_Gabrielle"
       }
-    ],
-    "temporadas": [
-        "Temporada 1",
-        "Temporada 2",
-        "Temporada 3"
-    ],
+ ],
+   "temporadas": [
+  {
+    "numero": 1,
     "capitulos": [
-                "Capitulo 1",
-        "Capitulo 2",
-        "Capitulo 3",
-        "Capitulo 4",
-        "Capitulo 5",
-        "Capitulo 6",
-        "Capitulo 7",
-        "Capitulo 8",
-        "Capitulo 9",
-        "... 17"
+      { "titulo": "Capítulo 1", "enlace": "https://www.youtube.com/watch?v=6YD0viMgZpg" },
+      { "titulo": "Capítulo 2", "enlace": "https://www.youtube.com/watch?v=6YD0viMgZpg" }
     ]
+  },
+  {
+    "numero": 2,
+    "capitulos": [
+      { "titulo": "Capítulo 1", "enlace": "https://www.youtube.com/watch?v=6YD0viMgZpg" }
+    ]
+  },
+  {
+    "numero": 3,
+    "capitulos": [
+      { "titulo": "Capítulo 1", "enlace": "https://www.youtube.com/watch?v=6YD0viMgZpg" },
+      { "titulo": "Capítulo 2", "enlace": "https://www.youtube.com/watch?v=6YD0viMgZpg" },
+      { "titulo": "Capítulo 3", "enlace": "https://www.youtube.com/watch?v=6YD0viMgZpg" }
+    ]
+  }
+   ]
   },
   {
     "tipo": "pelicula",
