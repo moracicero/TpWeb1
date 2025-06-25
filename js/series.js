@@ -1,17 +1,20 @@
+// Obtenemos los datos del localStorage o desde la constante
 const data = JSON.parse(localStorage.getItem("peliculasyseries")) || DATA_PELISYSERIES;
 const series = data.filter(item => item.tipo === "serie");
 
+// Referencias al DOM
 const grilla = document.getElementById("grilla-home");
 const inputBusqueda = document.getElementById("inputBusqueda");
 const botonBuscar = document.getElementById("botonBuscar");
 const selectGenero = document.getElementById("selectGenero");
 
+// Renderiza la grilla de series
 function renderizarGrilla(elementos) {
   grilla.innerHTML = "";
 
   elementos.forEach(item => {
     const card = document.createElement("a");
-    card.href = `detalle.html?titulo=${encodeURIComponent(item.titulo)}`;
+    card.href = `info-series.html?titulo=${encodeURIComponent(item.titulo)}`;
     card.innerHTML = `
       <img src="${item.imagen}" alt="${item.titulo}" />
       <h3>${item.titulo}</h3>
@@ -20,33 +23,39 @@ function renderizarGrilla(elementos) {
   });
 }
 
+// Aplica filtros por género y búsqueda
 function aplicarFiltros() {
-  const generoSeleccionado = selectGenero.value;
+  const generoSeleccionado = selectGenero.value.toLowerCase();
   const tituloBuscado = inputBusqueda.value.trim().toLowerCase();
 
-  let filtrados = series;
+  const filtrados = series.filter(item => {
+    // Filtro por género
+    const cumpleGenero =
+      generoSeleccionado === "todos" ||
+      (Array.isArray(item.genero)
+        ? item.genero.map(g => g.toLowerCase()).includes(generoSeleccionado)
+        : item.genero.toLowerCase() === generoSeleccionado);
 
-  if (generoSeleccionado !== "todos") {
-    filtrados = filtrados.filter(item => {
-      if (Array.isArray(item.genero)) {
-        return item.genero.map(g => g.toLowerCase()).includes(generoSeleccionado);
-      } else {
-        return item.genero.toLowerCase() === generoSeleccionado;
-      }
-    });
-  }
+    // Filtro por nombre parcial
+    const cumpleBusqueda = item.titulo.toLowerCase().includes(tituloBuscado);
 
-  if (tituloBuscado !== "") {
-    filtrados = filtrados.filter(item =>
-      item.titulo.toLowerCase().includes(tituloBuscado)
-    );
-  }
+    return cumpleGenero && cumpleBusqueda;
+  });
 
   renderizarGrilla(filtrados);
 }
 
+// Carga los géneros únicos al select
 function cargarGeneros() {
-  const generosUnicos = [...new Set(series.flatMap(item => item.genero.map(g => g.toLowerCase())))];
+  const generosUnicos = [
+    ...new Set(
+      series.flatMap(item =>
+        Array.isArray(item.genero)
+          ? item.genero.map(g => g.toLowerCase())
+          : [item.genero.toLowerCase()]
+      )
+    )
+  ];
 
   selectGenero.innerHTML = '<option value="todos">Todos</option>';
 
@@ -65,6 +74,6 @@ inputBusqueda.addEventListener("keyup", e => {
   if (e.key === "Enter") aplicarFiltros();
 });
 
-// Inicio
+// Inicialización
 cargarGeneros();
 renderizarGrilla(series);
