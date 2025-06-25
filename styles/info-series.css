@@ -1,5 +1,5 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #fff0f5;
@@ -34,6 +34,7 @@ main {
   height: auto;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  cursor: pointer;
 }
 
 .overlay-trailer {
@@ -75,6 +76,13 @@ iframe {
   color: #d63384;
 }
 
+.descripcion p,
+.descripcion ul,
+.descripcion select,
+.descripcion button {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .descripcion p {
   margin: 0.5rem 0;
 }
@@ -82,6 +90,15 @@ iframe {
 .descripcion ul {
   padding-left: 20px;
   margin: 0.5rem 0;
+}
+
+.descripcion ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.descripcion ul li a:hover {
+  text-decoration: underline;
 }
 
 .descripcion select,
@@ -93,6 +110,7 @@ iframe {
 
 .similares {
   margin-top: 2rem;
+  position: relative;
 }
 
 .similares h3 {
@@ -100,11 +118,18 @@ iframe {
   color: #d63384;
 }
 
+/* Carrusel */
 .recomendaciones {
   display: flex;
   overflow-x: auto;
   gap: 1rem;
   padding-bottom: 1rem;
+  scroll-behavior: smooth;
+  cursor: grab;
+}
+
+.recomendaciones::-webkit-scrollbar {
+  display: none;
 }
 
 .recomendaciones .card {
@@ -120,6 +145,11 @@ iframe {
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.recomendaciones .card img:hover {
+  transform: scale(1.05);
 }
 
 .recomendaciones .card p {
@@ -127,18 +157,48 @@ iframe {
   font-size: 0.9rem;
 }
 
-/* RESPONSIVE */
+/* Flechas */
+.flecha {
+  background-color: #d63384;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.flecha.izquierda {
+  left: -20px;
+}
+
+.flecha.derecha {
+  right: -20px;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .info-principal {
     flex-direction: column;
     align-items: center;
   }
 
-  .portada-container, .descripcion {
+  .portada-container,
+  .descripcion {
     width: 100%;
   }
 
   iframe {
     height: 200px;
   }
+
+  .flecha {
+    display: none;
+  }
 }
+
