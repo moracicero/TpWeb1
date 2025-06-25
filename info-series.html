@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UNFLIX | Detalle Serie</title>
+  <link rel="stylesheet" href="styles/header.css" />
+  <link rel="stylesheet" href="styles/footer.css" />
+  <link rel="stylesheet" href="styles/info-series.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+    <nav>
+      <ul>
+        <li><a href="home.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="series.html"><i class="fa-solid fa-film"></i> Series</a></li>
+        <li><a href="peliculas.html"><i class="fa-solid fa-film"></i> Películas</a></li>
+        <li><a href="perfil.html"><i class="fa-solid fa-circle-user"></i> Perfil</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="detalle">
+    <h1 id="titulo"></h1>
+    <div class="info-principal">
+      <img id="imagen" src="" alt="Poster" />
+      <div class="descripcion">
+        <p><strong>Año:</strong> <span id="anio"></span></p>
+        <p><strong>Género:</strong> <span id="genero"></span></p>
+        <p><strong>Descripción:</strong> <span id="descripcion"></span></p>
+        <p><strong>Elenco:</strong></p>
+        <ul id="actores"></ul>
+        <label>Temporada:
+          <select id="temporadas"></select>
+        </label>
+        <label>Capítulo:
+          <select id="capitulos"></select>
+        </label>
+        <button id="verCapitulo">Ver capítulo</button>
+      </div>
+    </div>
+
+    <iframe id="trailer" frameborder="0" allowfullscreen></iframe>
+
+    <section class="similares">
+      <h2>Similares</h2>
+      <div id="recomendaciones" class="recomendaciones"></div>
+    </section>
+  </main>
+
+  <script src="json-data/peliculasyseries.js"></script>
+  <script src="js/info-series.js"></script>
+</body>
+</html>

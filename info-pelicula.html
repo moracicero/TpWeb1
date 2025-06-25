@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detalle Película</title>
+   <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/info-pelicula.css" />
+  <script defer src="./js/info-pelicula.js"></script>
+</head>
+<body>
+  <header class="header">
+    <nav>
+      <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="series.html">SERIES</a></li>
+        <li><a href="peliculas.html">PELÍCULAS</a></li>
+        <li><a href="perfil.html">PERFIL</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="detalle-container">
+      <div class="detalle-info">
+        <h1 id="titulo"></h1>
+        <img id="imagen" alt="imagen película" />
+        <p><strong>Duración:</strong> <span id="duracion"></span></p>
+        <p><strong>Género:</strong> <span id="genero"></span></p>
+        <p><strong>Año:</strong> <span id="anio"></span></p>
+        <p><strong>Actores:</strong> <span id="actores"></span></p>
+        <p><strong>Resumen:</strong> <span id="resumen"></span></p>
+        <button id="verPeliculaBtn">Ver Película</button>
+      </div>
+      <div class="trailer">
+        <iframe id="iframe" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="similares">
+      <h2>Similares</h2>
+      <div class="carrusel" id="carruselSimilares"></div>
+    </section>
+  </main>
+</body>
+</html>
