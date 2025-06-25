@@ -1,4 +1,4 @@
-[
+const DATA_PELISYSERIES = [
   {
     "tipo": "serie",
     "imagen": "assets/2025-05-19_16h48_07.png",
