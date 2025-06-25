@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector("form");
-  const confirmarBtn = document.querySelector(".btn[href='index.html']");
+ const confirmarBtn = document.querySelector(".btn");
   const nombreInput = document.getElementById("nombre");
   const apellidoInput = document.getElementById("apellido");
   const emailInput = document.getElementById("email");
@@ -145,3 +145,4 @@ document.addEventListener("DOMContentLoaded", function () {
   // Iniciar validación inicial
   actualizarEstado();
 });
+
