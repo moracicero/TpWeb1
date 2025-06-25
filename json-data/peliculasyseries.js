@@ -845,15 +845,15 @@ const DATA_PELISYSERIES = [
     "elenco": [
       {
         "nombre": "Kristie Alley",
-        "link": ""
+        "link": "https://es.wikipedia.org/wiki/Kirstie_Alley"
       },
       {
         "nombre": "Steve Guttenberg",
-        "link": ""
+        "link": "https://es.wikipedia.org/wiki/Steve_Guttenberg"
       },
       {
         "nombre": "Mary-Kate Olsen",
-        "link": ""
+        "link": "https://es.wikipedia.org/wiki/Mary-Kate_y_Ashley_Olsen"
       }
     ],
     "temporadas": 0,
