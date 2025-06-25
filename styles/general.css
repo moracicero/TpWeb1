@@ -1,0 +1,195 @@
+/* ---------- GENERAL ---------- */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffeaf4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ---------- FILTROS ---------- */
+.filtros {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #fdd6e5;
+  gap: 10px;
+}
+
+.filtros label,
+.filtros select,
+.filtros input,
+.filtros button {
+  font-size: 16px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.busqueda {
+  display: flex;
+  gap: 10px;
+}
+
+.busqueda input {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.busqueda button {
+  background-color: #ec4a8c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.busqueda button:hover {
+  background-color: #c13a70;
+}
+
+/* ---------- GRILLA ---------- */
+
+.grilla h3 {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  margin-top: 8px;
+  font-weight: normal;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.grilla a {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.grilla a {
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 5px;
+  padding: 5px;
+  flex: 1;
+  justify-items: center;
+  
+}
+
+.grilla img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+
+.grilla img:hover {
+  transform: scale(1.03);
+}
+
+
+/* ---------- FOOTER NUEVO ---------- */
+.contenedor-footer {
+  background-color: #ec4a8c;
+  color: white;
+  padding: 30px 20px 10px 20px;
+}
+
+#fila {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+#fila h5 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+#fila ul {
+  list-style: none;
+  padding: 0;
+}
+
+#fila li {
+  margin-bottom: 6px;
+}
+
+#fila a {
+  color: white;
+  text-decoration: none;
+}
+
+#fila a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+.filtros-botones {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.filtros-botones button {
+  background-color: #ec4a8c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.filtros-botones button:hover {
+  background-color: #c13a70;
+}
+.heart-icon {
+  cursor: pointer;
+  color: gray;
+  margin-left: 10px;
+}
+
+.heart-icon.activo {
+  color: #d63384; /* Rosa oscuro de tu estilo */
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .filtros {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .busqueda {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .busqueda input,
+  .busqueda button {
+    width: 100%;
+    padding: 6px 12px;
+  }
+
+  #fila {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
