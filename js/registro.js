@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector("form");
- const confirmarBtn = document.querySelector(".btn");
+  const confirmarBtn = document.querySelector(".btn[href='index.html']");
   const nombreInput = document.getElementById("nombre");
   const apellidoInput = document.getElementById("apellido");
   const emailInput = document.getElementById("email");
@@ -50,6 +50,23 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   };
 
+  const metodoPagoRadios = document.getElementsByName("metodoPago");
+  const datosTarjetaDiv = document.getElementById("datosTarjeta");
+
+  function actualizarVisibilidadTarjeta() {
+    const metodoSeleccionado = [...metodoPagoRadios].find(r => r.checked)?.value;
+    datosTarjetaDiv.style.display = metodoSeleccionado === "tarjeta" ? "block" : "none";
+  }
+
+  metodoPagoRadios.forEach(radio => {
+    radio.addEventListener("change", () => {
+      actualizarVisibilidadTarjeta();
+      actualizarEstado(); // volver a validar
+    });
+  });
+
+  actualizarVisibilidadTarjeta(); // al cargar
+
   const actualizarEstado = () => {
     let esValido = true;
 
@@ -84,16 +101,22 @@ document.addEventListener("DOMContentLoaded", function () {
       esValido = false;
     } else errores.repetir.textContent = "";
 
-    if (!validarCodigo(codigoInput.value)) {
-      errores.codigo.textContent = "Debe ser 3 dígitos distintos de 0.";
-      esValido = false;
-    } else errores.codigo.textContent = "";
+    const metodoSeleccionado = [...metodoPagoRadios].find(r => r.checked)?.value;
+    if (metodoSeleccionado === "tarjeta") {
+      if (!validarCodigo(codigoInput.value)) {
+        errores.codigo.textContent = "Debe ser 3 dígitos distintos de 0.";
+        esValido = false;
+      } else errores.codigo.textContent = "";
 
-    if (!validarTarjeta(tarjetaInput.value)) {
-      errores.tarjeta.textContent =
-        "Tarjeta inválida (regla de par/impar no se cumple).";
-      esValido = false;
-    } else errores.tarjeta.textContent = "";
+      if (!validarTarjeta(tarjetaInput.value)) {
+        errores.tarjeta.textContent =
+          "Tarjeta inválida (regla de par/impar no se cumple).";
+        esValido = false;
+      } else errores.tarjeta.textContent = "";
+    } else {
+      errores.codigo.textContent = "";
+      errores.tarjeta.textContent = "";
+    }
 
     confirmarBtn.style.pointerEvents = esValido ? "auto" : "none";
     confirmarBtn.style.opacity = esValido ? 1 : 0.5;
@@ -101,7 +124,6 @@ document.addEventListener("DOMContentLoaded", function () {
     return esValido;
   };
 
-  // Habilita/deshabilita el botón al escribir
   form.addEventListener("input", actualizarEstado);
 
   confirmarBtn.addEventListener("click", function (e) {
@@ -135,14 +157,12 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location.href = "index.html";
   });
 
-  // Botón cancelar
   const cancelarBtn = document.querySelectorAll(".btn")[1];
   cancelarBtn.addEventListener("click", function (e) {
     e.preventDefault();
     window.location.href = "index.html";
   });
 
-  // Iniciar validación inicial
   actualizarEstado();
 });
 
