@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Validación inicial
+ 
   validarFormulario();
 });
 
