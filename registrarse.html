@@ -81,79 +81,79 @@
         <fieldset>
           <legend>Métodos de Pago</legend>
 
-          <label for="tarjeta"
-            ><input
-              id="tarjeta"
-              type="radio"
-              name="tarjeta-cupon-transferencia"
-              value="tarjeta"
-              checked
-            />
-            Tarjeta de Credito:</label
-          >
+  <label for="tarjeta">
+    <input
+      id="tarjeta"
+      type="radio"
+      name="metodoPago"
+      value="tarjeta"
+      checked
+    />
+    Tarjeta de Crédito:
+  </label>
 
-          <label for="numeroTarjeta">Número de tarjeta:</label>
-          <input
-            type="text"
-            id="numeroTarjeta"
-            name="numeroTarjeta"
-            inputmode="numeric"
-            pattern="[0-9]{13,19}"
-            maxlength="19"
-            required
-          />
+  <div id="datosTarjeta">
+    <label for="numeroTarjeta">Número de tarjeta:</label>
+    <input
+      type="text"
+      id="numeroTarjeta"
+      name="numeroTarjeta"
+      inputmode="numeric"
+      pattern="[0-9]{13,19}"
+      maxlength="19"
+    />
 
-          <label for="codigoSeguridad">Codigo de seguridad:</label>
-          <input
-            type="text"
-            id="codigoSeguridad"
-            name="codigoSeguridad"
-            inputmode="numeric"
-            pattern="[0-9]{3,4}"
-            maxlength="4"
-            required
-          />
+    <label for="codigoSeguridad">Código de seguridad:</label>
+    <input
+      type="text"
+      id="codigoSeguridad"
+      name="codigoSeguridad"
+      inputmode="numeric"
+      pattern="[0-9]{3,4}"
+      maxlength="4"
+    />
+  </div>
 
-          <label for="cupon"
-            ><input
-              id="cupon"
-              type="radio"
-              name="tarjeta-cupon-transferencia"
-              value="cupon"
-            />
-            Cupón de pago:</label
-          >
+  <label for="cupon">
+    <input
+      id="cupon"
+      type="radio"
+      name="metodoPago"
+      value="cupon"
+    />
+    Cupón de pago:
+  </label>
 
-          <label for="pago-facil"
-            >Pago fácil
-            <input
-              id="pago-facil"
-              type="checkbox"
-              name="formaPago"
-              value="pago-facil"
-            />
-          </label>
+  <label for="pago-facil">
+    Pago fácil
+    <input
+      id="pago-facil"
+      type="checkbox"
+      name="formaPago"
+      value="pago-facil"
+    />
+  </label>
 
-          <label for="rapipago"
-            >Rápipago
-            <input
-              id="rapipago"
-              type="checkbox"
-              name="formaPago"
-              value="rapipago"
-            />
-          </label>
+  <label for="rapipago">
+    Rápipago
+    <input
+      id="rapipago"
+      type="checkbox"
+      name="formaPago"
+      value="rapipago"
+    />
+  </label>
 
-          <label for="tranferencia"
-            ><input
-              id="tranferencia"
-              type="radio"
-              name="tarjeta-cupon-transferencia"
-              value="tranferencia"
-            />
-            Transferencia bancaria:</label
-          >
-          <span>CBU: 0123456789012345678901</span>
+  <label for="transferencia">
+    <input
+      id="transferencia"
+      type="radio"
+      name="metodoPago"
+      value="transferencia"
+    />
+    Transferencia bancaria:
+  </label>
+  <span>CBU: 0123456789012345678901</span>
         </fieldset>
 
         <div class="links">
@@ -165,4 +165,5 @@
     <script src="js/registro.js"></script>
   </body>
 </html>
+
 
