@@ -95,4 +95,8 @@ fieldset span {
 .links a:hover {
   text-decoration: underline;
 }
+.error-msg {
+  color: white;
+  font-size: 0.8rem;
+}
 
