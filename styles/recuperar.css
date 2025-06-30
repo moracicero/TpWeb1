@@ -72,6 +72,16 @@ input[type="email"] {
   border: none;
   border-radius: 5px;
   font-size: 1rem;
+
+  /*agregamos*/
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* placeholder */
+input::placeholder {
+  font-size: 1rem;
 }
 
 .btn {
@@ -100,6 +110,58 @@ input[type="email"] {
 
 .links a:hover {
   text-decoration: underline;
+}
+
+/*RESPONSIVE */
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+
+  input::placeholder {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  label {
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 0;
+  }
+
+  input::placeholder {
+    font-size: 0.8rem;
+  }
+
+  .login-form {
+    padding: 15px;
+  }
 }
 
 
