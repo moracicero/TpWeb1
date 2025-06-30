@@ -1,6 +1,10 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: Arial, sans-serif;
   font-size: 15px;
   background: #ff8da1;
@@ -13,11 +17,12 @@ body {
   padding: 2rem;
   background: #e75480;
   border-radius: 15px;
+  width: 90%;
 }
 
 .title {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
   color: #fff;
   margin-bottom: 0.3rem;
 }
@@ -26,7 +31,7 @@ body {
   text-align: center;
   color: #ff8da1;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 3vw, 1.25rem);
   margin-bottom: 2rem;
 }
 
@@ -36,12 +41,14 @@ form label {
   margin-bottom: 0.3rem;
   color: #fff;
   font-weight: 600;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"] {
   width: 100%;
+  max-width: 100%;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -63,40 +70,63 @@ fieldset {
 fieldset legend {
   font-weight: bold;
   color: #fff;
+  font-size: 1rem;
 }
 
 fieldset span {
   display: inline-block;
   margin-left: 10px;
   color: #fff;
+  font-size: 0.95rem;
 }
 
 .links {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
   margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
 .btn {
   background-color: #ff8da1;
   color: white;
   padding: 0.7rem 1.5rem;
-  text-decoration: none;
+  border: none;
   border-radius: 5px;
   font-weight: bold;
   text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
   transition: background-color 0.3s ease;
+  flex: 1 1 45%;
 }
 
 .btn:hover {
-  background-color: #ff8da1;
+  background-color: #e84e70;
 }
 
-.links a:hover {
-  text-decoration: underline;
-}
 .error-msg {
   color: white;
   font-size: 0.8rem;
+  text-align: center;
 }
+
+/* Responsive*/
+@media (max-width: 480px) {
+  .links {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  fieldset span {
+    margin-top: 0.5rem;
+    margin-left: 0;
+    display: block;
+  }
+}
+
 
