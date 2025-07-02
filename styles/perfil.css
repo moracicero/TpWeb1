@@ -27,7 +27,7 @@ nav a {
   color: white;
   text-decoration: none;
 
-  padding: 10px 15px;
+  padding: 29px 30px; /* ↑ más alto */
   display: flex;
   align-items: center;
   gap: 6px;
@@ -101,6 +101,7 @@ legend {
 .btn {
   background-color: #ff8da1;
   color: white;
+
   border: none;
   padding: 0.8rem 1.5rem;
   border-radius: 5px;
@@ -116,7 +117,7 @@ legend {
 footer.contenedor-footer {
   background-color: #e75480;
   color: #fff;
-  padding: 2rem 1rem;
+  padding: 1rem 0.5rem;
   font-weight: 600;
 }
 
@@ -126,7 +127,7 @@ footer.contenedor-footer {
   gap: 2rem;
   flex-wrap: wrap;
   max-width: 1200px;
-  margin: 0 auto 1rem;
+  margin: 0 auto 0.5rem;
 }
 
 #fila div {
@@ -135,7 +136,7 @@ footer.contenedor-footer {
 
 #fila h5 {
   color: #e91e63;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font-weight: 700;
 }
 
@@ -145,7 +146,7 @@ footer ul {
 }
 
 footer li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
 footer a {
@@ -159,9 +160,8 @@ footer a:hover {
 
 footer .copyright {
   text-align: center;
-  font-size: 0.9rem;
-  border-top: 1px solid #ccc;
-  padding-top: 1rem;
+  font-size: 0.75em;
+  padding-top: 0.4rem;
 }
 
 /* --------------- RESPONSIVE ------------------ */
