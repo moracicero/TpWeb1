@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Mostrar errores
   const crearMensajeError = (input) => {
     const msg = document.createElement("span");
-    msg.style.color = "white";
+    msg.style.color = "red";
     msg.style.fontSize = "0.8rem";
     msg.classList.add("error-msg");
     input.insertAdjacentElement("afterend", msg);
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   let errorCupon = document.createElement("span");
-  errorCupon.style.color = "white";
+  errorCupon.style.color = "red";
   errorCupon.style.fontSize = "0.8rem";
   errorCupon.classList.add("error-msg");
   metodoCupon.parentElement.insertAdjacentElement("afterend", errorCupon);
